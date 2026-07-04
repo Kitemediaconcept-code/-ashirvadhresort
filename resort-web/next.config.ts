@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* Required for Cloudflare Pages deployment */
+  output: "export",
 };
 
 export default nextConfig;
