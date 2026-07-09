@@ -32,11 +32,11 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-3xl"
           >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-[1.05] mb-4">
+            <h1 className="text-4xl md:text-7xl lg:text-8xl font-serif text-white leading-[1.05] mb-4">
               Your Sanctuary <br className="hidden md:block" />
               Awaits in <span className="text-primary">Wayanad</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/90 max-w-xl mb-6">
+            <p className="text-base md:text-xl text-white/90 max-w-xl mb-6">
               Luxury stays nestled in the heart of nature.
             </p>
 

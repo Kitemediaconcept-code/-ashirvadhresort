@@ -11,54 +11,72 @@ export function StatsBar() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="border border-white/10 rounded-[48px] p-6 md:p-8 bg-[#0a0a0a] flex flex-wrap lg:flex-nowrap items-center justify-between gap-8 lg:gap-4 shadow-2xl"
+        className="border border-white/10 rounded-[32px] md:rounded-[48px] p-6 md:p-8 bg-[#0a0a0a] grid grid-cols-2 md:flex md:flex-row flex-wrap lg:flex-nowrap items-start md:items-center justify-between gap-y-8 gap-x-4 md:gap-4 shadow-2xl"
       >
-        <div className="flex flex-col items-center justify-center text-center w-1/2 md:w-auto">
-          <Leaf className="text-primary mb-2" size={24} />
-          <span className="text-sm font-medium text-white">Premium Eco-Resort</span>
-          <span className="text-xs text-white/50">Without Compromise</span>
+        <div className="order-1 md:order-none flex flex-row md:flex-col items-center md:justify-center text-left md:text-center w-full md:w-auto gap-3 md:gap-0">
+          <Leaf className="text-primary mb-0 md:mb-2 shrink-0" size={24} />
+          <div className="flex flex-col">
+            <span className="text-sm font-medium text-white">Premium Eco-Resort</span>
+            <span className="text-xs text-white/50">Without Compromise</span>
+          </div>
         </div>
         
         <div className="hidden md:block w-px h-12 bg-white/10" />
 
-        <div className="flex flex-col items-center justify-center text-center w-1/2 md:w-auto">
-          <span className="text-2xl font-light mb-1 text-white">25-Acre</span>
-          <span className="text-xs text-white/50">Lush Green<br/>Estate</span>
+        <div className="order-3 md:order-none flex flex-row md:flex-col items-center md:justify-center text-left md:text-center w-full md:w-auto gap-3 md:gap-0">
+          <div className="w-6 shrink-0 flex justify-center md:hidden">
+            <span className="text-primary text-xl font-light"></span>
+          </div>
+          <div className="flex flex-col md:items-center">
+            <span className="text-lg md:text-2xl font-light mb-0 md:mb-1 text-white">25-Acre</span>
+            <span className="text-xs text-white/50">Lush Green<br className="md:hidden"/> Estate</span>
+          </div>
         </div>
         
         <div className="hidden md:block w-px h-12 bg-white/10" />
 
-        <div className="flex flex-col items-center justify-center text-center w-1/2 md:w-auto">
-          <span className="text-2xl font-light mb-1 text-white">24/7</span>
-          <span className="text-xs text-white/50">Dedicated<br/>Concierge</span>
+        <div className="order-5 md:order-none flex flex-row md:flex-col items-center md:justify-center text-left md:text-center w-full md:w-auto gap-3 md:gap-0">
+          <div className="w-6 shrink-0 flex justify-center md:hidden">
+            <span className="text-primary text-xl font-light"></span>
+          </div>
+          <div className="flex flex-col md:items-center">
+            <span className="text-lg md:text-2xl font-light mb-0 md:mb-1 text-white">24/7</span>
+            <span className="text-xs text-white/50">Dedicated<br className="md:hidden"/> Concierge</span>
+          </div>
         </div>
         
         <div className="hidden md:block w-px h-12 bg-white/10" />
 
-        <div className="flex flex-col items-center justify-center text-center w-1/2 md:w-auto">
-          <MapPin className="text-white/50 mb-2" size={20} />
-          <span className="text-sm font-medium text-white">11.662° N</span>
-          <span className="text-xs text-white/50">Latitude</span>
+        <div className="order-2 md:order-none flex flex-row md:flex-col items-center md:justify-center text-left md:text-center w-full md:w-auto gap-3 md:gap-0">
+          <MapPin className="text-white/50 mb-0 md:mb-2 shrink-0" size={24} />
+          <div className="flex flex-col">
+            <span className="text-sm font-medium text-white">11.662° N</span>
+            <span className="text-xs text-white/50">Latitude</span>
+          </div>
         </div>
         
         <div className="hidden md:block w-px h-12 bg-white/10" />
 
-        <div className="flex flex-col items-center justify-center text-center w-1/2 md:w-auto">
-          <MapPin className="text-white/50 mb-2" size={20} />
-          <span className="text-sm font-medium text-white">76.190° E</span>
-          <span className="text-xs text-white/50">Longitude</span>
+        <div className="order-4 md:order-none flex flex-row md:flex-col items-center md:justify-center text-left md:text-center w-full md:w-auto gap-3 md:gap-0">
+          <MapPin className="text-white/50 mb-0 md:mb-2 shrink-0" size={24} />
+          <div className="flex flex-col">
+            <span className="text-sm font-medium text-white">76.190° E</span>
+            <span className="text-xs text-white/50">Longitude</span>
+          </div>
         </div>
         
         <div className="hidden md:block w-px h-12 bg-white/10" />
 
-        <div className="flex flex-col items-center justify-center text-center w-1/2 md:w-auto">
-          <Mountain className="text-white/50 mb-2" size={20} />
-          <span className="text-sm font-medium text-white">2,100 ft</span>
-          <span className="text-xs text-white/50">Above<br/>Sea Level</span>
+        <div className="order-6 md:order-none flex flex-row md:flex-col items-center md:justify-center text-left md:text-center w-full md:w-auto gap-3 md:gap-0">
+          <Mountain className="text-white/50 mb-0 md:mb-2 shrink-0" size={24} />
+          <div className="flex flex-col">
+            <span className="text-sm font-medium text-white">2,100 ft</span>
+            <span className="text-xs text-white/50">Above<br className="md:hidden"/> Sea Level</span>
+          </div>
         </div>
         
-        <div className="w-full lg:w-auto flex justify-center mt-4 lg:mt-0 lg:pl-4">
-          <Link href="/rooms" className="px-8 py-3 rounded-full border border-white/30 text-white text-sm font-medium hover:bg-white hover:text-black transition-colors shrink-0">
+        <div className="order-7 md:order-none col-span-2 w-full lg:w-auto flex justify-center mt-4 md:mt-0 lg:pl-4">
+          <Link href="/rooms" className="w-full md:w-auto text-center px-8 py-3 rounded-full border border-white/30 text-white text-sm font-medium hover:bg-white hover:text-black transition-colors shrink-0">
             BOOK NOW
           </Link>
         </div>

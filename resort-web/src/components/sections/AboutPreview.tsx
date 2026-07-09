@@ -17,14 +17,14 @@ export function AboutPreview() {
       >
         <div>
           <p className="text-sm text-black/50 mb-2 font-medium tracking-widest uppercase">(01)</p>
-          <h2 className="text-3xl lg:text-4xl font-serif text-black mb-6">About Us</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-black mb-6">About Us</h2>
           
-          <h3 className="text-2xl md:text-3xl font-serif leading-snug text-black/90 mb-4">
+          <h3 className="text-xl md:text-3xl font-serif leading-snug text-black/90 mb-4">
             Our mission is to create the perfect conditions for relaxation, where every guest can find tranquility in the embrace of nature.
           </h3>
         </div>
 
-        <div className="space-y-4 text-black/70 leading-relaxed max-w-md">
+        <div className="space-y-4 text-sm md:text-base text-black/70 leading-relaxed max-w-md">
           <p>
             At Ashirvadh, we offer more than just a stay — we offer an experience. Surrounded by lush greenery, misty hills, and breathtaking landscapes, our resort is crafted for your comfort and peace.
           </p>

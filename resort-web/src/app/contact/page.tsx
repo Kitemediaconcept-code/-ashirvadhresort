@@ -35,7 +35,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-medium text-lg">Location</h4>
-                    <p className="text-muted-foreground">Ashirvadh Nature Resort,<br />Wayanad, Kerala, India 673592</p>
+                    <p className="text-muted-foreground">Ashirvadh Nature Resort<br />Krishnagiri, Wayanad</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -44,7 +44,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-medium text-lg">Phone</h4>
-                    <p className="text-muted-foreground">+91 98765 43210</p>
+                    <p className="text-muted-foreground">+91 7902 029 491</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -59,9 +59,16 @@ export default function ContactPage() {
               </ul>
             </div>
 
-            {/* Google Map Mock */}
-            <div className="w-full h-64 bg-muted rounded-2xl overflow-hidden flex items-center justify-center text-muted-foreground">
-              [Google Maps Embed]
+            {/* Google Map */}
+            <div className="w-full h-64 md:h-80 bg-muted rounded-2xl overflow-hidden flex items-center justify-center text-muted-foreground">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.4270552847047!2d76.1919427!3d11.6641169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba609007e0d2055%3A0x4fb0aebb713bf8f0!2sAshirvadh%20Nature%20Resorts!5e0!3m2!1sen!2sin!4v1783596146235!5m2!1sen!2sin" 
+                className="w-full h-full" 
+                style={{ border: 0 }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
 

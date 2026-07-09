@@ -40,11 +40,11 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-muted-foreground">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-primary mt-0.5 shrink-0" />
-                <span>Wayanad, Kerala, India</span>
+                <span>Ashirvadh Nature Resort Krishnagiri, Wayanad</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-primary shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 7902 029 491</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-primary shrink-0" />
@@ -70,7 +70,7 @@ export function Footer() {
             
             <div className="mt-8">
               <Link 
-                href="https://wa.me/919876543210" 
+                href="https://wa.me/917902029491" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-transparent border border-white/10 text-foreground px-6 py-2.5 rounded-full text-sm hover:border-primary hover:text-primary transition-all"

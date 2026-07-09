@@ -6,11 +6,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const catalog = [
-  { id: 1, title: "Deluxe Cottage, 50m²", price: "from ₹5,000", image: "/card1.png" },
-  { id: 2, title: "A-Frame Cabin, 45m²", price: "from ₹7,200", image: "/hero-bg.jpg" },
-  { id: 3, title: "Luxury Villa, 85m²", price: "from ₹12,000", image: "/card1.png" },
-  { id: 4, title: "Lake View Room, 60m²", price: "from ₹8,500", image: "/hero-bg.jpg" },
-  { id: 5, title: "Forest Suite, 70m²", price: "from ₹10,000", image: "/card1.png" },
+  { id: 1, title: "Deluxe Cottage, 50m²", price: "from ₹5,000", image: "/ROOMS.png" },
+  { id: 2, title: "A-Frame Cabin, 45m²", price: "from ₹7,200", image: "/hero.png" },
+  { id: 3, title: "Luxury Villa, 85m²", price: "from ₹12,000", image: "/REORT PULL.png" },
+  { id: 4, title: "Lake View Room, 60m²", price: "from ₹8,500", image: "/CARD6.png" },
+  { id: 5, title: "Forest Suite, 70m²", price: "from ₹10,000", image: "/ROOMS.png" },
 ];
 
 export function CatalogCarousel() {
@@ -32,7 +32,7 @@ export function CatalogCarousel() {
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-10 px-2 md:px-0">
         <h2 className="text-2xl md:text-3xl font-sans font-medium leading-tight max-w-lg">
-          Catalog of our stays for 2024
+          Catalog of our stays
         </h2>
         <p className="text-sm text-foreground/70 max-w-xs text-left md:text-right">
           Premium eco-friendly hospitality and modern luxury in the heart of nature

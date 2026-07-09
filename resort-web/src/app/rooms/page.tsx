@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 };
 
 const allRooms = [
-  { id: 1, title: "Deluxe Cottage", image: "/room-1.png", capacity: "1 - 4 Guests", desc: "Spacious cottage with a private balcony overlooking the forest." },
-  { id: 2, title: "A-Frame Cabin", image: "/room-2.png", capacity: "1 - 2 Guests", desc: "Cozy architectural marvel perfect for romantic getaways." },
-  { id: 3, title: "Luxury Villa", image: "/room-3.png", capacity: "1 - 6 Guests", desc: "Expansive villa featuring multiple bedrooms and premium amenities." },
-  { id: 4, title: "Lake View Room", image: "/room-4.png", capacity: "1 - 4 Guests", desc: "Wake up to serene lake views and gentle morning breezes." },
+  { id: 1, title: "Deluxe Cottage", image: "/ROOMS.png", capacity: "1 - 4 Guests", desc: "Spacious cottage with a private balcony overlooking the forest." },
+  { id: 2, title: "A-Frame Cabin", image: "/card2.png", capacity: "1 - 2 Guests", desc: "Cozy architectural marvel perfect for romantic getaways." },
+  { id: 3, title: "Luxury Villa", image: "/hero.png", capacity: "1 - 6 Guests", desc: "Expansive villa featuring multiple bedrooms and premium amenities." },
+  { id: 4, title: "Lake View Room", image: "/CARD6.png", capacity: "1 - 4 Guests", desc: "Wake up to serene lake views and gentle morning breezes." },
 ];
 
 export default function RoomsPage() {

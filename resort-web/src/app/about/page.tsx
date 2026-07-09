@@ -28,10 +28,10 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="relative h-64 rounded-2xl overflow-hidden mt-8">
-              <Image src="/room-3.png" alt="Nature" fill className="object-cover" />
+              <Image src="/hero.png" alt="Nature" fill className="object-cover" />
             </div>
             <div className="relative h-64 rounded-2xl overflow-hidden">
-              <Image src="/room-1.png" alt="Comfort" fill className="object-cover" />
+              <Image src="/ROOMS.png" alt="Comfort" fill className="object-cover" />
             </div>
           </div>
         </div>

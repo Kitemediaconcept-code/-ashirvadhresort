@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const rooms = [
-  { id: 1, title: "Deluxe Cottage", image: "/card1.png", capacity: "1 - 4 Guests" },
-  { id: 2, title: "A-Frame Cabin", image: "/hero-bg.jpg", capacity: "1 - 2 Guests" },
-  { id: 3, title: "Luxury Villa", image: "/card1.png", capacity: "1 - 6 Guests" },
-  { id: 4, title: "Lake View Room", image: "/hero-bg.jpg", capacity: "1 - 4 Guests" },
+  { id: 1, title: "Deluxe Cottage", image: "/ROOMS.png", capacity: "1 - 4 Guests" },
+  { id: 2, title: "A-Frame Cabin", image: "/card2.png", capacity: "1 - 2 Guests" },
+  { id: 3, title: "Luxury Villa", image: "/hero.png", capacity: "1 - 6 Guests" },
+  { id: 4, title: "Lake View Room", image: "/CARD6.png", capacity: "1 - 4 Guests" },
 ];
 
 export function RoomPreview() {
@@ -24,7 +24,7 @@ export function RoomPreview() {
           transition={{ duration: 0.6 }}
         >
           <p className="text-sm text-muted-foreground mb-2">(02)</p>
-          <h2 className="text-3xl font-serif text-foreground mb-6">Accommodation</h2>
+          <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-6">Accommodation</h2>
           <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
             All our rooms are thoughtfully designed to offer you the perfect blend of luxury, comfort, and nature. Whether you&apos;re looking for a romantic escape or a family retreat, we have the perfect stay for you.
           </p>
@@ -36,7 +36,7 @@ export function RoomPreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3 className="text-3xl md:text-4xl font-serif leading-tight text-foreground">
+          <h3 className="text-xl md:text-4xl font-serif leading-tight text-foreground">
             Wake up to the sound of birds and enjoy the view of lush forests, hills, and waters.
           </h3>
         </motion.div>
