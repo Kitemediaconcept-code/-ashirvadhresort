@@ -2,8 +2,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gallery | Ashirvadh Nature Resort",
-  description: "Visual journey through the pristine nature and luxurious architecture of Ashirvadh Nature Resort.",
+  title: "Gallery | Photos of Ashirvadh Nature Resort Wayanad",
+  description: "View photos of the pristine nature, luxurious cottages, and premium facilities at Ashirvadh Nature Resort in Wayanad, Kerala.",
+  alternates: { canonical: "/gallery" }
 };
 
 const images = [

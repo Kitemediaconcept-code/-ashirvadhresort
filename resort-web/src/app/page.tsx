@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Luxury Nature Resort in Wayanad | Ashirvadh Resort",
+  description: "Looking for the best resorts in Wayanad? Ashirvadh Nature Resort offers luxury stays, private cottages, lake views, and nature trails in the heart of Kerala.",
+  alternates: { canonical: "/" }
+};
+
 import { Hero } from "@/components/sections/Hero";
 import { StatsBar } from "@/components/sections/StatsBar";
 import { CatalogCarousel } from "@/components/sections/CatalogCarousel";
