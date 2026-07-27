@@ -8,7 +8,7 @@ import { ExperiencesPreview } from "@/components/sections/ExperiencesPreview";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full bg-background">
+    <div className="flex flex-col w-full bg-white text-black">
       <Hero />
       <StatsBar />
       <CatalogCarousel />

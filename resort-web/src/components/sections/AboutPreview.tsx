@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function AboutPreview() {
   return (
-    <section className="bg-white rounded-[40px] md:rounded-[60px] p-8 md:p-16 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center text-black">
+    <section className="bg-[#e6eb97] rounded-[40px] md:rounded-[60px] p-8 md:p-16 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center text-[#365b30]">
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,15 +16,15 @@ export function AboutPreview() {
         className="order-2 lg:order-1 flex flex-col justify-center space-y-8 lg:pr-8"
       >
         <div>
-          <p className="text-sm text-black/50 mb-2 font-medium tracking-widest uppercase">(01)</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-black mb-6">About Us</h2>
+          <p className="text-sm text-[#365b30]/70 mb-2 font-medium tracking-widest uppercase">(01)</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-[#365b30] mb-6">About Us</h2>
           
-          <h3 className="text-xl md:text-3xl font-serif leading-snug text-black/90 mb-4">
+          <h3 className="text-xl md:text-3xl font-serif leading-snug text-[#365b30]/90 mb-4">
             Our mission is to create the perfect conditions for relaxation, where every guest can find tranquility in the embrace of nature.
           </h3>
         </div>
 
-        <div className="space-y-4 text-sm md:text-base text-black/70 leading-relaxed max-w-md">
+        <div className="space-y-4 text-sm md:text-base text-[#365b30]/80 leading-relaxed max-w-md">
           <p>
             At Ashirvadh, we offer more than just a stay — we offer an experience. Surrounded by lush greenery, misty hills, and breathtaking landscapes, our resort is crafted for your comfort and peace.
           </p>
@@ -32,10 +32,10 @@ export function AboutPreview() {
 
         <Link 
           href="/about"
-          className="inline-flex items-center gap-3 bg-black text-white px-6 py-3 rounded-full hover:bg-black/80 transition-all self-start mt-4"
+          className="inline-flex items-center gap-3 bg-[#365b30] text-[#e6eb97] px-6 py-3 rounded-full hover:bg-[#365b30]/80 transition-all self-start mt-4"
         >
           <span className="text-sm font-medium">Learn More About Us</span>
-          <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-black">
+          <div className="w-8 h-8 rounded-full bg-[#e6eb97] flex items-center justify-center text-[#365b30]">
             <ArrowRight size={16} />
           </div>
         </Link>

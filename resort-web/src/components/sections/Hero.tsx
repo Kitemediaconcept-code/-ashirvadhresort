@@ -18,8 +18,8 @@ export function Hero() {
           priority
           quality={90}
         />
-        {/* Gradient Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-black/30" />
+        {/* Professional smooth dark gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
       </div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10 w-full">

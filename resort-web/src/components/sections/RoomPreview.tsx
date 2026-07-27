@@ -23,9 +23,9 @@ export function RoomPreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm text-muted-foreground mb-2">(02)</p>
-          <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-6">Accommodation</h2>
-          <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
+          <p className="text-sm text-[#365b30]/70 mb-2">(02)</p>
+          <h2 className="text-2xl md:text-3xl font-serif text-[#365b30] mb-6">Accommodation</h2>
+          <p className="text-[#365b30]/80 text-sm leading-relaxed max-w-sm">
             All our rooms are thoughtfully designed to offer you the perfect blend of luxury, comfort, and nature. Whether you&apos;re looking for a romantic escape or a family retreat, we have the perfect stay for you.
           </p>
         </motion.div>
@@ -36,7 +36,7 @@ export function RoomPreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3 className="text-xl md:text-4xl font-serif leading-tight text-foreground">
+          <h3 className="text-xl md:text-4xl font-serif leading-tight text-[#365b30]">
             Wake up to the sound of birds and enjoy the view of lush forests, hills, and waters.
           </h3>
         </motion.div>

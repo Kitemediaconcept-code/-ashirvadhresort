@@ -28,13 +28,13 @@ export function CatalogCarousel() {
   };
 
   return (
-    <section className="bg-transparent text-foreground rounded-[32px] md:rounded-[48px] p-0 md:p-14 my-12 overflow-hidden mx-4 md:mx-12 lg:mx-auto lg:max-w-[1400px]">
+    <section className="bg-white text-[#365b30] rounded-[32px] md:rounded-[48px] p-6 md:p-14 my-12 overflow-hidden mx-4 md:mx-12 lg:mx-auto lg:max-w-[1400px]">
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-10 px-2 md:px-0">
-        <h2 className="text-2xl md:text-3xl font-sans font-medium leading-tight max-w-lg">
+        <h2 className="text-2xl md:text-3xl font-sans font-medium leading-tight max-w-lg text-[#365b30]">
           Catalog of our stays
         </h2>
-        <p className="text-sm text-foreground/70 max-w-xs text-left md:text-right">
+        <p className="text-sm text-[#365b30]/80 max-w-xs text-left md:text-right">
           Premium eco-friendly hospitality and modern luxury in the heart of nature
         </p>
       </div>
@@ -71,21 +71,21 @@ export function CatalogCarousel() {
 
       {/* Footer Controls */}
       <div className="flex justify-between items-center mt-4 px-2 md:px-0">
-        <button className="bg-primary text-primary-foreground px-8 py-3.5 rounded-full font-medium hover:bg-primary/90 transition-colors flex items-center gap-2 text-sm">
+        <button className="bg-[#e6eb97] text-[#365b30] px-8 py-3.5 rounded-full font-medium hover:bg-[#e6eb97]/90 transition-colors flex items-center gap-2 text-sm">
           View Catalog
         </button>
 
         <div className="flex gap-3">
           <button 
             onClick={() => scroll("left")}
-            className="w-12 h-12 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-colors"
+            className="w-12 h-12 bg-[#e6eb97]/20 hover:bg-[#e6eb97]/40 text-[#365b30] rounded-full flex items-center justify-center backdrop-blur-sm transition-colors"
             aria-label="Scroll Left"
           >
             <ChevronLeft size={24} />
           </button>
           <button 
             onClick={() => scroll("right")}
-            className="w-12 h-12 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-colors"
+            className="w-12 h-12 bg-[#e6eb97]/20 hover:bg-[#e6eb97]/40 text-[#365b30] rounded-full flex items-center justify-center backdrop-blur-sm transition-colors"
             aria-label="Scroll Right"
           >
             <ChevronRight size={24} />

@@ -46,9 +46,9 @@ export function ExperiencesPreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm text-muted-foreground mb-2">(03)</p>
-          <h2 className="text-3xl font-serif text-foreground mb-6">Experiences</h2>
-          <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
+          <p className="text-sm text-[#365b30]/70 mb-2">(03)</p>
+          <h2 className="text-3xl font-serif text-[#365b30] mb-6">Experiences</h2>
+          <p className="text-[#365b30]/80 text-sm leading-relaxed max-w-sm">
             From peaceful nature trails to exciting outdoor activities and delightful dining experiences, there&apos;s something for every soul.
           </p>
         </motion.div>
@@ -59,7 +59,7 @@ export function ExperiencesPreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3 className="text-3xl md:text-4xl font-serif leading-tight text-foreground">
+          <h3 className="text-3xl md:text-4xl font-serif leading-tight text-[#365b30]">
             Here begins an adventure, a new gastronomic experience and harmony with nature.
           </h3>
         </motion.div>
