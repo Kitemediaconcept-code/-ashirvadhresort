@@ -4,9 +4,9 @@ export function LocalBusinessSchema() {
     "@type": "Resort",
     "name": "Ashirvadh Nature Resort",
     "image": [
-      "https://ashirvadhresort.com/hero.png",
-      "https://ashirvadhresort.com/card1.png",
-      "https://ashirvadhresort.com/ROOMS.png"
+      "https://ashirvadhresorts.com/hero.png",
+      "https://ashirvadhresorts.com/card1.png",
+      "https://ashirvadhresorts.com/ROOMS.png"
     ],
     "description": "Experience luxury stays nestled in the heart of nature at Ashirvadh Nature Resort, Wayanad. Offering premium cottages, lake view rooms, and immersive nature experiences.",
     "address": {
@@ -22,7 +22,7 @@ export function LocalBusinessSchema() {
       "latitude": 11.662,
       "longitude": 76.190
     },
-    "url": "https://ashirvadhresort.com",
+    "url": "https://ashirvadhresorts.com",
     "telephone": "+919876543210",
     "priceRange": "$$$",
     "amenityFeature": [

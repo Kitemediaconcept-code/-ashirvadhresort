@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://ashirvadhresort.com/sitemap.xml",
+    sitemap: "https://ashirvadhresorts.com/sitemap.xml",
   };
 }

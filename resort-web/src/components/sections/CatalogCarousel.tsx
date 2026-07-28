@@ -28,9 +28,9 @@ export function CatalogCarousel() {
   };
 
   return (
-    <section className="bg-white text-[#365b30] rounded-[32px] md:rounded-[48px] p-6 md:p-14 my-12 overflow-hidden mx-4 md:mx-12 lg:mx-auto lg:max-w-[1400px]">
+    <section className="bg-white text-[#365b30] rounded-[32px] md:rounded-[48px] py-6 md:py-14 my-12 overflow-hidden mx-4 md:mx-12 lg:mx-auto lg:max-w-[1400px]">
       {/* Header */}
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-10 px-2 md:px-0">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-10 px-6 md:px-14">
         <h2 className="text-2xl md:text-3xl font-sans font-medium leading-tight max-w-lg text-[#365b30]">
           Catalog of our stays
         </h2>
@@ -42,7 +42,7 @@ export function CatalogCarousel() {
       {/* Carousel */}
       <div 
         ref={scrollRef}
-        className="flex gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory pb-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] px-2 md:px-0"
+        className="flex gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory pb-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] px-6 md:px-14"
       >
         {catalog.map((item, idx) => (
           <motion.div
@@ -62,30 +62,29 @@ export function CatalogCarousel() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none" />
             
             <div className="absolute bottom-6 left-6 right-6">
-              <h4 className="text-white font-medium text-lg mb-1">{item.title}</h4>
-              <p className="text-white/80 text-sm">{item.price}</p>
+              <h4 className="text-white font-medium text-lg">{item.title}</h4>
             </div>
           </motion.div>
         ))}
       </div>
 
       {/* Footer Controls */}
-      <div className="flex justify-between items-center mt-4 px-2 md:px-0">
-        <button className="bg-[#e6eb97] text-[#365b30] px-8 py-3.5 rounded-full font-medium hover:bg-[#e6eb97]/90 transition-colors flex items-center gap-2 text-sm">
+      <div className="flex justify-between items-center mt-4 px-6 md:px-14">
+        <button className="bg-black text-white px-8 py-3.5 rounded-full font-medium hover:bg-black/90 transition-colors flex items-center gap-2 text-sm">
           View Catalog
         </button>
 
         <div className="flex gap-3">
           <button 
             onClick={() => scroll("left")}
-            className="w-12 h-12 bg-[#e6eb97]/20 hover:bg-[#e6eb97]/40 text-[#365b30] rounded-full flex items-center justify-center backdrop-blur-sm transition-colors"
+            className="w-12 h-12 bg-black hover:bg-black/80 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-colors"
             aria-label="Scroll Left"
           >
             <ChevronLeft size={24} />
           </button>
           <button 
             onClick={() => scroll("right")}
-            className="w-12 h-12 bg-[#e6eb97]/20 hover:bg-[#e6eb97]/40 text-[#365b30] rounded-full flex items-center justify-center backdrop-blur-sm transition-colors"
+            className="w-12 h-12 bg-black hover:bg-black/80 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-colors"
             aria-label="Scroll Right"
           >
             <ChevronRight size={24} />

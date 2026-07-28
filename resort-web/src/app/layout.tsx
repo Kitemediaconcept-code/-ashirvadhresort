@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ashirvadhresort.com"),
+  metadataBase: new URL("https://ashirvadhresorts.com"),
   title: {
     default: "Ashirvadh Nature Resort | Luxury Stays in Wayanad",
     template: "%s | Ashirvadh Nature Resort Wayanad",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ashirvadhresort.com",
+    url: "https://ashirvadhresorts.com",
     title: "Ashirvadh Nature Resort | Luxury Stays in Wayanad",
     description: "Experience the ultimate luxury and nature immersion at Ashirvadh Nature Resort, Wayanad. The best resort in Wayanad for family stays, couples, and nature lovers.",
     siteName: "Ashirvadh Nature Resort",
