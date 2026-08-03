@@ -6,10 +6,9 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const rooms = [
-  { id: 1, title: "Deluxe Cottage", image: "/ROOMS.png", capacity: "1 - 4 Guests" },
-  { id: 2, title: "A-Frame Cabin", image: "/card2.png", capacity: "1 - 2 Guests" },
-  { id: 3, title: "Luxury Villa", image: "/hero.png", capacity: "1 - 6 Guests" },
-  { id: 4, title: "Lake View Room", image: "/CARD6.png", capacity: "1 - 4 Guests" },
+  { id: 1, title: "Deluxe Cottage", image: "/main5.png", capacity: "1 - 4 Guests" },
+  { id: 2, title: "A-Frame Cabin", image: "/r2.png", capacity: "1 - 2 Guests" },
+  { id: 3, title: "Luxury Villa", image: "/r4.png", capacity: "1 - 6 Guests" },
 ];
 
 export function RoomPreview() {
@@ -43,7 +42,7 @@ export function RoomPreview() {
       </div>
 
       {/* Room Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {rooms.map((room, idx) => (
           <motion.div
             key={room.id}
