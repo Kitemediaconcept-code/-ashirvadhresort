@@ -10,28 +10,28 @@ const experiences = [
     icon: Leaf,
     title: "Nature Trails",
     desc: "Explore scenic forest paths",
-    image: "/card1.png", // Using available images as placeholders for experience backgrounds
+    image: "/exp-amphi2.jpg",
   },
   {
     id: 2,
     icon: Flame,
     title: "Campfire Nights",
     desc: "Unwind under the stars",
-    image: "/hero-bg.jpg",
+    image: "/exp-room.jpg",
   },
   {
     id: 3,
     icon: Utensils,
     title: "Local Cuisine",
     desc: "Savor authentic flavors",
-    image: "/card1.png",
+    image: "/exp-pool.jpg",
   },
   {
     id: 4,
     icon: Mountain,
     title: "Adventure Activities",
     desc: "Live the thrill outdoors",
-    image: "/hero-bg.jpg",
+    image: "/exp-amphi1.jpg",
   },
 ];
 
