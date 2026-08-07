@@ -17,7 +17,7 @@ const experiences = [
     icon: Flame,
     title: "Campfire Nights",
     desc: "Unwind under the stars",
-    image: "/exp-room.jpg",
+    image: "/fire.png",
   },
   {
     id: 3,

@@ -28,7 +28,7 @@ export function StatsBar() {
             <span className="text-primary text-xl font-light"></span>
           </div>
           <div className="flex flex-col md:items-center">
-            <span className="text-lg md:text-2xl font-light mb-0 md:mb-1 text-white">25-Acre</span>
+            <span className="text-lg md:text-2xl font-light mb-0 md:mb-1 text-white">10 Acre</span>
             <span className="text-xs text-white/50">Lush Green<br className="md:hidden"/> Estate</span>
           </div>
         </div>

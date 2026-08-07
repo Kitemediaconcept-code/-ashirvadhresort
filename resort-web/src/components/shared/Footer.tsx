@@ -44,7 +44,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-primary shrink-0" />
-                <span>+91 7902 029 491</span>
+                <span>+91 7902 929 491</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-primary shrink-0" />
@@ -70,7 +70,7 @@ export function Footer() {
             
             <div className="mt-8">
               <Link 
-                href="https://wa.me/917902029491" 
+                href="https://wa.me/917902929491" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-transparent border border-white/10 text-foreground px-6 py-2.5 rounded-full text-sm hover:border-primary hover:text-primary transition-all"
