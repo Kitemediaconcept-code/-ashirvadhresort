@@ -34,7 +34,7 @@ export function WayanadFeatures() {
           </h2>
           
           <p className="text-[#4a554a] leading-relaxed mb-10 max-w-md text-sm md:text-base">
-            Wayanad district of Kerala is located at coordinates <strong className="text-[#a48650] font-medium">11.662° N</strong> latitude and <strong className="text-[#a48650] font-medium">76.190° E</strong> longitude. It sits at an average altitude of approximately <strong className="text-[#a48650] font-medium">2,100 feet</strong> (640 meters) above sea level.
+            Ashirvadh Nature Resorts Wayanad is situated in the Wayanad district of Kerala at coordinates <strong className="text-[#a48650] font-medium">11.662° N</strong> latitude and <strong className="text-[#a48650] font-medium">76.190° E</strong> longitude, at an average altitude of approximately <strong className="text-[#a48650] font-medium">2,100 feet</strong> (640 meters) above sea level.
           </p>
 
           <Link href="/about" className="inline-flex items-center gap-4 bg-[#131613] text-white px-6 py-2.5 rounded-full hover:bg-black transition-colors group shadow-lg">

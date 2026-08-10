@@ -20,11 +20,12 @@ export const metadata: Metadata = {
     default: "Ashirvadh Resorts Wayanad | Best Nature Resort in Wayanad",
     template: "%s | Ashirvadh Resorts Wayanad",
   },
-  description: "Ashirvadh Resorts in Wayanad — experience luxury nature stays, private cottages, and breathtaking hill views. One of the best resorts in Wayanad for families, couples & nature lovers.",
+  description: "Ashirvadh Nature Resorts Wayanad — experience luxury nature stays, private cottages, and breathtaking hill views. One of the best resorts in Wayanad for families, couples & nature lovers.",
   keywords: [
     "ashirvadhresorts in wayanad",
     "ashirvadh resorts wayanad",
     "resorts in wayanad",
+    "Ashirvadh Nature Resorts wayanad",
     "Ashirvadh Nature Resort",
     "best resort in Wayanad",
     "luxury resort Wayanad",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://ashirvadhresorts.com",
     title: "Ashirvadh Resorts Wayanad | Best Nature Resort in Wayanad",
-    description: "Ashirvadh Resorts in Wayanad — experience luxury nature stays, private cottages, and breathtaking hill views. One of the best resorts in Wayanad.",
+    description: "Ashirvadh Nature Resorts Wayanad — luxury nature stays, private cottages, and breathtaking hill views. One of the best resorts in Wayanad.",
     siteName: "Ashirvadh Nature Resort",
     images: [
       {
