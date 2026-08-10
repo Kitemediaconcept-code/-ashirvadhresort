@@ -49,7 +49,7 @@ export function ExperiencesPreview() {
           <p className="text-sm text-[#365b30]/70 mb-2">(03)</p>
           <h2 className="text-3xl font-serif text-[#365b30] mb-6">Experiences</h2>
           <p className="text-[#365b30]/80 text-sm leading-relaxed max-w-sm">
-            From peaceful nature trails to exciting outdoor activities and delightful dining experiences, there&apos;s something for every soul.
+            At Ashirvadh Resorts Wayanad, from peaceful nature trails to exciting outdoor activities and delightful dining — there&apos;s something for every soul visiting resorts in Wayanad.
           </p>
         </motion.div>
         

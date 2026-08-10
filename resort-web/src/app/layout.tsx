@@ -17,19 +17,32 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ashirvadhresorts.com"),
   title: {
-    default: "Ashirvadh Nature Resort | Luxury Stays in Wayanad",
-    template: "%s | Ashirvadh Nature Resort Wayanad",
+    default: "Ashirvadh Resorts Wayanad | Best Nature Resort in Wayanad",
+    template: "%s | Ashirvadh Resorts Wayanad",
   },
-  description: "Experience the ultimate luxury and nature immersion at Ashirvadh Nature Resort, Wayanad. The best resort in Wayanad for family stays, couples, and nature lovers.",
-  keywords: ["Wayanad resort", "luxury stay in Wayanad", "best resort in Wayanad", "nature resort Wayanad", "Wayanad accommodation", "resort in Wayanad with pool", "lake view resort Wayanad"],
+  description: "Ashirvadh Resorts in Wayanad — experience luxury nature stays, private cottages, and breathtaking hill views. One of the best resorts in Wayanad for families, couples & nature lovers.",
+  keywords: [
+    "ashirvadhresorts in wayanad",
+    "ashirvadh resorts wayanad",
+    "resorts in wayanad",
+    "Ashirvadh Nature Resort",
+    "best resort in Wayanad",
+    "luxury resort Wayanad",
+    "nature resort Wayanad",
+    "Wayanad accommodation",
+    "Wayanad stay",
+    "resort Wayanad Kerala",
+    "lake view resort Wayanad",
+    "Krishnagiri resort Wayanad"
+  ],
   authors: [{ name: "Ashirvadh Resort" }],
   creator: "Ashirvadh Resort",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://ashirvadhresorts.com",
-    title: "Ashirvadh Nature Resort | Luxury Stays in Wayanad",
-    description: "Experience the ultimate luxury and nature immersion at Ashirvadh Nature Resort, Wayanad. The best resort in Wayanad for family stays, couples, and nature lovers.",
+    title: "Ashirvadh Resorts Wayanad | Best Nature Resort in Wayanad",
+    description: "Ashirvadh Resorts in Wayanad — experience luxury nature stays, private cottages, and breathtaking hill views. One of the best resorts in Wayanad.",
     siteName: "Ashirvadh Nature Resort",
     images: [
       {
@@ -42,8 +55,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ashirvadh Nature Resort | Luxury Stays in Wayanad",
-    description: "Experience the ultimate luxury and nature immersion at Ashirvadh Nature Resort, Wayanad.",
+    title: "Ashirvadh Resorts Wayanad | Best Nature Resort in Wayanad",
+    description: "Ashirvadh Resorts in Wayanad — luxury nature stays, private cottages & breathtaking views. One of the best resorts in Wayanad.",
     images: ["/hero.png"],
   },
   alternates: {

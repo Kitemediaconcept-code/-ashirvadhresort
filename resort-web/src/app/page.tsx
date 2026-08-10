@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Luxury Nature Resort in Wayanad | Ashirvadh Resort",
-  description: "Looking for the best resorts in Wayanad? Ashirvadh Nature Resort offers luxury stays, private cottages, lake views, and nature trails in the heart of Kerala.",
+  title: "Ashirvadh Resorts Wayanad | Best Nature Resorts in Wayanad Kerala",
+  description: "Welcome to Ashirvadh Resorts in Wayanad — Kerala's finest nature resort. Luxury cottages, lake views, and unforgettable experiences at one of the best resorts in Wayanad.",
   alternates: { canonical: "/" }
 };
 

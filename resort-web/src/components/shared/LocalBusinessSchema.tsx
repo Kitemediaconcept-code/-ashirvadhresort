@@ -8,13 +8,13 @@ export function LocalBusinessSchema() {
       "https://ashirvadhresorts.com/card1.png",
       "https://ashirvadhresorts.com/ROOMS.png"
     ],
-    "description": "Experience luxury stays nestled in the heart of nature at Ashirvadh Nature Resort, Wayanad. Offering premium cottages, lake view rooms, and immersive nature experiences.",
+    "description": "Experience luxury stays nestled in the heart of nature at Ashirvadh Nature Resort, Wayanad. Offering premium cottages, lake view rooms, and immersive nature experiences in Kerala.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Ashirvadh Nature Resort",
+      "streetAddress": "Krishnagiri",
       "addressLocality": "Wayanad",
       "addressRegion": "Kerala",
-      "postalCode": "673592",
+      "postalCode": "673591",
       "addressCountry": "IN"
     },
     "geo": {
@@ -23,8 +23,18 @@ export function LocalBusinessSchema() {
       "longitude": 76.190
     },
     "url": "https://ashirvadhresorts.com",
-    "telephone": "+919876543210",
+    "telephone": "+919048067880",
     "priceRange": "$$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "4",
+      "bestRating": "5"
+    },
+    "sameAs": [
+      "https://www.instagram.com/ashirvadhresort",
+      "https://maps.app.goo.gl/your-google-maps-link"
+    ],
     "amenityFeature": [
       {
         "@type": "LocationFeatureSpecification",
@@ -35,8 +45,20 @@ export function LocalBusinessSchema() {
         "@type": "LocationFeatureSpecification",
         "name": "Lake View",
         "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Free Parking",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Restaurant",
+        "value": true
       }
-    ]
+    ],
+    "checkinTime": "12:00",
+    "checkoutTime": "11:00"
   };
 
   return (
