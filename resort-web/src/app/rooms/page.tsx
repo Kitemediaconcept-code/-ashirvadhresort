@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Luxury Cottages & Rooms in Wayanad | Ashirvadh Resort",
   description: "Explore our luxurious cottages, villas, and lake view rooms in Wayanad. Perfect accommodations designed for comfort and nature immersion in Kerala.",
-  alternates: { canonical: "/rooms" }
+  alternates: { canonical: "/rooms/" }
 };
 
 const allRooms = [

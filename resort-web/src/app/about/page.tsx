@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us | Luxury Eco-Resort in Wayanad",
   description: "Learn about the story, vision, and eco-friendly hospitality philosophy of Ashirvadh Nature Resort, the premier luxury getaway in Wayanad, Kerala.",
-  alternates: { canonical: "/about" }
+  alternates: { canonical: "/about/" }
 };
 
 export default function AboutPage() {

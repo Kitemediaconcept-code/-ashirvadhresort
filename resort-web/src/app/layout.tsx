@@ -62,7 +62,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "/",
-  }
+  },
+  verification: {
+    google: "PASTE_YOUR_TOKEN_HERE",
+  },
 };
 
 import { Header } from "@/components/shared/Header";

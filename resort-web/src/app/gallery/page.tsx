@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Gallery | Photos of Ashirvadh Nature Resort Wayanad",
   description: "View photos of the pristine nature, luxurious cottages, and premium facilities at Ashirvadh Nature Resort in Wayanad, Kerala.",
-  alternates: { canonical: "/gallery" }
+  alternates: { canonical: "/gallery/" }
 };
 
 const images = [
