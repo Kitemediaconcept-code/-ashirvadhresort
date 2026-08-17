@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative w-full h-[90vh] min-h-[600px] flex items-end pb-12 pt-32 overflow-hidden rounded-b-[40px] md:rounded-b-[60px]">
+    <section className="relative w-full h-[90vh] min-h-[600px] flex items-end pb-12 pt-32 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image

@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Leaf, Flame, Utensils, Mountain } from "lucide-react";
-
+import { Leaf, TreePine, Waves, Mountain } from "lucide-react";
 const experiences = [
   {
     id: 1,
@@ -14,16 +13,16 @@ const experiences = [
   },
   {
     id: 2,
-    icon: Flame,
-    title: "Campfire Nights",
-    desc: "Unwind under the stars",
-    image: "/fire.png",
+    icon: TreePine,
+    title: "CANOPY SUITE",
+    desc: "Stay Close to Nature",
+    image: "/08.jpg",
   },
   {
     id: 3,
-    icon: Utensils,
-    title: "Local Cuisine",
-    desc: "Savor authentic flavors",
+    icon: Waves,
+    title: "Infinity Pool",
+    desc: "Swim into pure serenity",
     image: "/exp-pool.jpg",
   },
   {

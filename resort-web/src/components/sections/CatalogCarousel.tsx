@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 
 const catalog = [
   { id: 1, title: "Deluxe Cottage, 50m²", price: "from ₹5,000", image: "/main5.png" },
-  { id: 2, title: "A-Frame Cabin, 45m²", price: "from ₹7,200", image: "/r2.png" },
-  { id: 3, title: "Luxury Villa, 85m²", price: "from ₹12,000", image: "/r4.png" },
-  { id: 4, title: "Lake View Room, 60m²", price: "from ₹8,500", image: "/r5.png" },
-  { id: 5, title: "Forest Suite, 70m²", price: "from ₹10,000", image: "/r1.png" },
+  { id: 2, title: "Cottages", price: "from ₹7,200", image: "/03.jpg" },
+  { id: 3, title: "Deluxe Cottage – Twin Beds", price: "from ₹12,000", image: "/r4.png" },
+  { id: 4, title: "Deluxe Cottage – King Bed", price: "from ₹8,500", image: "/r5.png" },
+  { id: 5, title: "Deluxe Cottage – King Bed", price: "from ₹10,000", image: "/09.jpg" },
 ];
 
 export function CatalogCarousel() {
