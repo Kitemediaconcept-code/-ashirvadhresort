@@ -33,7 +33,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-[750px] md:min-h-0 md:aspect-video xl:aspect-[21/9] flex flex-col justify-end pb-8 pt-24 md:pt-32 overflow-hidden rounded-b-[40px] md:rounded-b-[60px] bg-[#15120F]">
+    <section className="relative w-full min-h-[750px] md:min-h-0 md:aspect-video xl:aspect-[21/9] flex flex-col justify-end pb-8 pt-24 md:pt-32 overflow-hidden bg-[#15120F]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
