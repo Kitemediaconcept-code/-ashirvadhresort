@@ -127,7 +127,7 @@ export function Hero() {
         {/* Professional smooth dark gradient overlay for text readability */}
         <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#15120F] via-[#15120F]/40 to-transparent pointer-events-none" />
 
-      <div className="container mx-auto px-5 md:px-12 relative z-10 w-full flex flex-col gap-10 md:gap-12 lg:gap-16">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-24 relative z-10 w-full flex flex-col gap-10 md:gap-12 lg:gap-16">
         {/* Main Typography */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}

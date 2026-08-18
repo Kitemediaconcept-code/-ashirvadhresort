@@ -19,7 +19,7 @@ export default function Home() {
       <Hero />
       <StatsBar />
       <CatalogCarousel />
-      <div className="container mx-auto px-6 md:px-12 py-16 flex flex-col gap-32">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-24 py-16 flex flex-col gap-32">
         <AboutPreview />
         <RoomPreview />
         <ExperiencesPreview />
