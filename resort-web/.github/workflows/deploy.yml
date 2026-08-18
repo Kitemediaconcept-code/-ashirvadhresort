@@ -29,6 +29,11 @@ jobs:
           cache: "npm"
           cache-dependency-path: resort-web/package-lock.json
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        with:
+          static_site_generator: next
+
       - name: Install dependencies
         run: npm ci
         working-directory: resort-web
@@ -36,9 +41,6 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: resort-web
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
