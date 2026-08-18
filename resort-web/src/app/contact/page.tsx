@@ -44,7 +44,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-medium text-lg text-black">Phone</h4>
-                    <p className="text-gray-700">+91 7902 929 491</p>
+                    <p className="text-gray-700">+91 7902 929 491<br />+91 90480 67880</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">

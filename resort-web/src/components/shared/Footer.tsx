@@ -42,9 +42,12 @@ export function Footer() {
                 <MapPin size={18} className="text-primary mt-0.5 shrink-0" />
                 <span>Ashirvadh Nature Resort Krishnagiri, Wayanad</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone size={18} className="text-primary shrink-0" />
-                <span>+91 7902 929 491</span>
+              <li className="flex items-start gap-3">
+                <Phone size={18} className="text-primary shrink-0 mt-0.5" />
+                <div className="flex flex-col">
+                  <span>+91 7902 929 491</span>
+                  <span>+91 90480 67880</span>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-primary shrink-0" />
