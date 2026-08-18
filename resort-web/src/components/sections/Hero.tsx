@@ -5,14 +5,14 @@ import { motion, useScroll, useTransform, useMotionValueEvent, useSpring } from 
 import { CalendarDays, Clock, MapPin } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 
+const frameCount = 46;
+const currentFrame = (index: number) => 
+  `/mouse scroll animation desktop/frame_${index.toString().padStart(3, '0')}.jpg`;
+
 export function Hero() {
   const [timeLeft, setTimeLeft] = useState({ days: 10, hours: 8, minutes: 32, seconds: 45 });
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
-
-  const frameCount = 46;
-  const currentFrame = (index: number) => 
-    `/mouse scroll animation desktop/frame_${index.toString().padStart(3, '0')}.jpg`;
 
   useEffect(() => {
     // Preload images for smooth animation
