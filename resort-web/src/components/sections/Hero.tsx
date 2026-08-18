@@ -1,12 +1,84 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform, useMotionValueEvent, useSpring } from "framer-motion";
 import { CalendarDays, Clock, MapPin } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export function Hero() {
   const [timeLeft, setTimeLeft] = useState({ days: 10, hours: 8, minutes: 32, seconds: 45 });
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  const frameCount = 46;
+  const currentFrame = (index: number) => 
+    `/mouse scroll animation desktop/frame_${index.toString().padStart(3, '0')}.jpg`;
+
+  useEffect(() => {
+    // Preload images for smooth animation
+    if (typeof window !== "undefined") {
+      for (let i = 1; i <= frameCount; i++) {
+        const img = new window.Image();
+        img.src = currentFrame(i);
+      }
+    }
+  }, []);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end end"]
+  });
+
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
+  const frameIndex = useTransform(smoothProgress, [0, 1], [1, frameCount]);
+
+  useMotionValueEvent(frameIndex, "change", (latest) => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const context = canvas.getContext('2d');
+    if (!context) return;
+
+    const img = new window.Image();
+    img.src = currentFrame(Math.round(latest));
+    
+    img.onload = () => {
+      const scale = Math.max(canvas.width / img.width, canvas.height / img.height);
+      const x = (canvas.width / 2) - (img.width / 2) * scale;
+      const y = (canvas.height / 2) - (img.height / 2) * scale;
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(img, x, y, img.width * scale, img.height * scale);
+    };
+  });
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const context = canvas.getContext('2d');
+    if (!context) return;
+
+    const setCanvasSize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      
+      const img = new window.Image();
+      img.src = currentFrame(1);
+      img.onload = () => {
+        const scale = Math.max(canvas.width / img.width, canvas.height / img.height);
+        const x = (canvas.width / 2) - (img.width / 2) * scale;
+        const y = (canvas.height / 2) - (img.height / 2) * scale;
+        context.drawImage(img, x, y, img.width * scale, img.height * scale);
+      };
+    };
+
+    setCanvasSize();
+    window.addEventListener('resize', setCanvasSize);
+    return () => window.removeEventListener('resize', setCanvasSize);
+  }, []);
 
   useEffect(() => {
     // Set for Sunday 23/08/2026 at 5:00 PM
@@ -33,20 +105,27 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-[750px] md:min-h-0 md:aspect-video xl:aspect-[21/9] flex flex-col justify-end pb-8 pt-24 md:pt-32 overflow-hidden bg-[#15120F]">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/hero3.png"
-          alt="Ashirvadh Nature Resort Grand Launch"
-          fill
-          className="object-cover object-[center_bottom] md:object-center"
-          priority
-          quality={100}
-        />
+    <div ref={sectionRef} className="relative w-full md:h-[300vh]">
+      <section className="relative md:sticky md:top-0 w-full min-h-[750px] md:h-screen md:min-h-0 flex flex-col justify-end pb-8 pt-24 md:pt-32 overflow-hidden bg-[#15120F]">
+        {/* Background Image (Mobile Fallback) */}
+        <div className="absolute inset-0 z-0 md:hidden">
+          <Image
+            src="/hero3.png"
+            alt="Ashirvadh Nature Resort Grand Launch"
+            fill
+            className="object-cover object-[center_bottom]"
+            priority
+            quality={100}
+          />
+        </div>
+
+        {/* Canvas for Desktop */}
+        <div className="hidden md:block absolute inset-0 z-0">
+          <canvas ref={canvasRef} className="w-full h-full object-cover" />
+        </div>
+
         {/* Professional smooth dark gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#15120F] via-[#15120F]/40 to-transparent" />
-      </div>
+        <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#15120F] via-[#15120F]/40 to-transparent pointer-events-none" />
 
       <div className="container mx-auto px-5 md:px-12 relative z-10 w-full flex flex-col gap-12 md:gap-24">
         {/* Main Typography */}
@@ -86,7 +165,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="w-full bg-[#181511]/30 backdrop-blur-xl border border-white/10 rounded-[1.5rem] md:rounded-[2rem] p-5 md:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 lg:gap-12 shadow-2xl"
+          className="w-full lg:w-fit bg-[#181511]/30 backdrop-blur-xl border border-white/10 rounded-[1.5rem] md:rounded-[2rem] p-5 md:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-start gap-5 lg:gap-10 shadow-2xl"
         >
           {/* Countdown */}
           <div className="flex flex-col gap-3 md:gap-5 w-full lg:w-auto">
@@ -139,5 +218,6 @@ export function Hero() {
         </motion.div>
       </div>
     </section>
+  </div>
   );
 }
