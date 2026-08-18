@@ -29,18 +29,18 @@ const images = [
 
 export default function GalleryPage() {
   return (
-    <div className="pt-32 pb-32 min-h-screen bg-background">
+    <div className="pt-32 pb-32 min-h-screen bg-white text-black">
       <div className="container mx-auto px-6 md:px-12 max-w-7xl">
         
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16">
           <div>
-            <div className="inline-block bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-medium tracking-wide mb-6">
+            <div className="inline-block bg-black/5 border border-black/10 px-4 py-1.5 rounded-full text-xs font-medium tracking-wide mb-6">
               Our Stories
             </div>
-            <h1 className="text-5xl md:text-7xl font-sans tracking-tight font-medium">Photo Gallery</h1>
+            <h1 className="text-5xl md:text-7xl font-sans tracking-tight font-medium text-black">Photo Gallery</h1>
           </div>
-          <p className="text-muted-foreground max-w-xs mt-6 md:mt-0 text-sm md:text-base md:text-right leading-relaxed">
+          <p className="text-gray-700 max-w-xs mt-6 md:mt-0 text-sm md:text-base md:text-right leading-relaxed">
             Captured moments from our nature resort and scenic surroundings.
           </p>
         </div>

@@ -14,11 +14,11 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="pt-32 pb-24 min-h-screen bg-background">
+    <div className="pt-32 pb-24 min-h-screen bg-white text-black">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-serif mb-6">Contact Us</h1>
-          <p className="text-muted-foreground text-lg">
+          <h1 className="text-5xl md:text-6xl font-serif mb-6 text-black">Contact Us</h1>
+          <p className="text-gray-700 text-lg">
             We would love to hear from you. Reach out for bookings, inquiries, or just to say hello.
           </p>
         </div>
@@ -34,8 +34,8 @@ export default function ContactPage() {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h4 className="font-medium text-lg">Location</h4>
-                    <p className="text-muted-foreground">Ashirvadh Nature Resort<br />Krishnagiri, Wayanad</p>
+                    <h4 className="font-medium text-lg text-black">Location</h4>
+                    <p className="text-gray-700">Ashirvadh Nature Resort<br />Krishnagiri, Wayanad</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -43,8 +43,8 @@ export default function ContactPage() {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h4 className="font-medium text-lg">Phone</h4>
-                    <p className="text-muted-foreground">+91 7902 929 491</p>
+                    <h4 className="font-medium text-lg text-black">Phone</h4>
+                    <p className="text-gray-700">+91 7902 929 491</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -52,8 +52,8 @@ export default function ContactPage() {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h4 className="font-medium text-lg">Email</h4>
-                    <p className="text-muted-foreground">info@ashirvadhresort.com</p>
+                    <h4 className="font-medium text-lg text-black">Email</h4>
+                    <p className="text-gray-700">info@ashirvadhresort.com</p>
                   </div>
                 </li>
               </ul>
@@ -73,36 +73,36 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-muted/30 p-8 md:p-10 rounded-[32px] border border-white/5">
-            <h3 className="text-2xl font-serif mb-8">Send an Inquiry</h3>
+          <div className="bg-gray-50 p-8 md:p-10 rounded-[32px] border border-black/5">
+            <h3 className="text-2xl font-serif mb-8 text-black">Send an Inquiry</h3>
             
             {status === "success" ? (
               <div className="h-full min-h-[300px] flex flex-col items-center justify-center text-center">
                 <div className="w-16 h-16 bg-green-500/20 text-green-500 rounded-full flex items-center justify-center mb-4">
                   <Send size={32} />
                 </div>
-                <h4 className="text-xl font-medium mb-2">Message Sent!</h4>
-                <p className="text-muted-foreground">Thank you for reaching out. We will get back to you shortly.</p>
+                <h4 className="text-xl font-medium mb-2 text-black">Message Sent!</h4>
+                <p className="text-gray-700">Thank you for reaching out. We will get back to you shortly.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground/80">Full Name</label>
-                  <input type="text" id="name" required className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors" placeholder="John Doe" />
+                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-800">Full Name</label>
+                  <input type="text" id="name" required className="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-black focus:outline-none focus:border-primary transition-colors" placeholder="John Doe" />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground/80">Email Address</label>
-                    <input type="email" id="email" required className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors" placeholder="john@example.com" />
+                    <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-800">Email Address</label>
+                    <input type="email" id="email" required className="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-black focus:outline-none focus:border-primary transition-colors" placeholder="john@example.com" />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium mb-2 text-foreground/80">Phone Number</label>
-                    <input type="tel" id="phone" className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors" placeholder="+91 00000 00000" />
+                    <label htmlFor="phone" className="block text-sm font-medium mb-2 text-gray-800">Phone Number</label>
+                    <input type="tel" id="phone" className="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-black focus:outline-none focus:border-primary transition-colors" placeholder="+91 00000 00000" />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground/80">Your Message</label>
-                  <textarea id="message" required rows={5} className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors resize-none" placeholder="I would like to inquire about..."></textarea>
+                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-800">Your Message</label>
+                  <textarea id="message" required rows={5} className="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-black focus:outline-none focus:border-primary transition-colors resize-none" placeholder="I would like to inquire about..."></textarea>
                 </div>
                 <button type="submit" disabled={status === "submitting"} className="w-full bg-primary text-primary-foreground py-3.5 rounded-xl font-medium hover:bg-primary/90 transition-all flex justify-center items-center gap-2">
                   {status === "submitting" ? "Sending..." : "Submit Inquiry"}

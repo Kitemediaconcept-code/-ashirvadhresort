@@ -18,11 +18,11 @@ const allRooms = [
 
 export default function RoomsPage() {
   return (
-    <div className="pt-32 pb-24 min-h-screen bg-background">
+    <div className="pt-32 pb-24 min-h-screen bg-white text-black">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-2xl mb-16">
-          <h1 className="text-5xl md:text-6xl font-serif mb-6">Rooms & Suites</h1>
-          <p className="text-muted-foreground text-lg">
+          <h1 className="text-5xl md:text-6xl font-serif mb-6 text-black">Rooms & Suites</h1>
+          <p className="text-gray-700 text-lg">
             Discover our range of thoughtfully designed accommodations, blending modern comfort with natural elegance.
           </p>
         </div>
@@ -37,8 +37,8 @@ export default function RoomsPage() {
                 <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
                   {room.capacity}
                 </div>
-                <h2 className="text-3xl md:text-4xl font-serif">{room.title}</h2>
-                <p className="text-muted-foreground leading-relaxed">
+                <h2 className="text-3xl md:text-4xl font-serif text-black">{room.title}</h2>
+                <p className="text-gray-700 leading-relaxed">
                   {room.desc}
                 </p>
                 <Link href="/contact" className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-full font-medium hover:bg-primary/90 transition-all">
