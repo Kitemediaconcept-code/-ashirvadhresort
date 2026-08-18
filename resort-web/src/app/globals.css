@@ -7,8 +7,8 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  --font-sans: var(--font-manrope);
-  --font-serif: var(--font-manrope);
+  --font-sans: 'Manrope', sans-serif;
+  --font-serif: 'Playfair Display', serif;
 }
 
 :root {
