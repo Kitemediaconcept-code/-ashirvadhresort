@@ -9,11 +9,9 @@ export const metadata: Metadata = {
 };
 
 const allRooms = [
-  { id: 1, title: "Pool Villa", image: "/main5.png", capacity: "1 - 4 Guests", desc: "Spacious cottage with a private balcony overlooking the forest." },
-  { id: 2, title: "Cottages", image: "/03.jpg", capacity: "1 - 2 Guests", desc: "Cozy architectural marvel perfect for romantic getaways." },
-  { id: 3, title: "Deluxe Cottage – Twin Beds", image: "/r4.png", capacity: "1 - 6 Guests", desc: "Expansive villa featuring multiple bedrooms and premium amenities." },
-  { id: 4, title: "Two-Bedroom Cottage", image: "/r13.jpg", capacity: "1 - 4 Guests", desc: "Wake up to serene lake views and gentle morning breezes." },
-  { id: 5, title: "Deluxe Cottage – King Bed", image: "/09.jpg", capacity: "1 - 4 Guests", desc: "Experience ultimate luxury in our most spacious and secluded suite." },
+  { id: 1, title: "Cottages", image: "/03.jpg", capacity: "1 - 2 Guests", desc: "Cozy architectural marvel perfect for romantic getaways." },
+  { id: 2, title: "Pool Villas", image: "/poolvilla.png", capacity: "1 - 4 Guests", desc: "Spacious cottage with a private balcony overlooking the forest." },
+  { id: 3, title: "Villas", image: "/r13.jpg", capacity: "1 - 6 Guests", desc: "Expansive villa featuring multiple bedrooms and premium amenities." },
 ];
 
 export default function RoomsPage() {
