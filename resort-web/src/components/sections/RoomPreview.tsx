@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const rooms = [
-  { id: 1, title: "Deluxe Cottage", image: "/main5.png", capacity: "1 - 4 Guests" },
+  { id: 1, title: "Pool Villa", image: "/main5.png", capacity: "1 - 4 Guests" },
   { id: 2, title: "Cottages", image: "/03.jpg", capacity: "1 - 2 Guests" },
   { id: 3, title: "Deluxe Cottage – Twin Beds", image: "/r4.png", capacity: "1 - 6 Guests" },
 ];

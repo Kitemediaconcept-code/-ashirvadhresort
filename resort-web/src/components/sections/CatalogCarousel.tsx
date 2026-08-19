@@ -6,10 +6,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const catalog = [
-  { id: 1, title: "Deluxe Cottage, 50m²", price: "from ₹5,000", image: "/main5.png" },
+  { id: 1, title: "Pool Villa", price: "from ₹5,000", image: "/main5.png" },
   { id: 2, title: "Cottages", price: "from ₹7,200", image: "/03.jpg" },
   { id: 3, title: "Deluxe Cottage – Twin Beds", price: "from ₹12,000", image: "/r4.png" },
-  { id: 4, title: "Deluxe Cottage – King Bed", price: "from ₹8,500", image: "/r5.png" },
+  { id: 4, title: "Two-Bedroom Cottage", price: "from ₹8,500", image: "/r13.jpg" },
   { id: 5, title: "Deluxe Cottage – King Bed", price: "from ₹10,000", image: "/09.jpg" },
 ];
 
