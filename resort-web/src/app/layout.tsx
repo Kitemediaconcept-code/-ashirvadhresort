@@ -58,6 +58,7 @@ export const metadata: Metadata = {
 import { Header } from "@/components/shared/Header";
 import { Footer } from "@/components/shared/Footer";
 import { WhatsAppWidget } from "@/components/shared/WhatsAppWidget";
+import { VirtualTourWidget } from "@/components/shared/VirtualTourWidget";
 import { SmoothScroll } from "@/components/shared/SmoothScroll";
 import { LocalBusinessSchema } from "@/components/shared/LocalBusinessSchema";
 
@@ -83,6 +84,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppWidget />
+        <VirtualTourWidget />
       </body>
     </html>
   );

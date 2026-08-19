@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { MapPin, Mountain, Leaf } from "lucide-react";
+import { MapPin, Mountain, Leaf, ChevronRight } from "lucide-react";
 
 export function StatsBar() {
   return (
@@ -21,6 +21,34 @@ export function StatsBar() {
           </div>
         </div>
         
+        <div className="hidden md:block w-px h-12 bg-white/10" />
+
+        {/* 360 Virtual Tour Button */}
+        <div className="order-2 md:order-none col-span-2 md:col-span-1 w-full md:w-auto flex justify-center md:px-2">
+          <Link 
+            href="https://cybozom.com/360/ashirvad/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-between md:justify-center gap-3 px-5 py-2.5 rounded-full border border-primary/40 hover:border-primary hover:bg-primary/5 transition-all group w-full md:w-auto"
+          >
+            <div className="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="text-primary shrink-0">
+                <path d="M21 12a9 4 0 0 0-9-4 9 4 0 0 0-9 4 9 4 0 0 0 9 4 9 4 0 0 0 9-4Z" />
+                <path d="M21 12l-2-2" />
+                <path d="M21 12l-2 2" />
+                <path d="M3 12l2-2" />
+                <path d="M3 12l2 2" />
+                <text x="12" y="15" textAnchor="middle" fill="currentColor" stroke="none" fontSize="8" fontWeight="600" fontFamily="sans-serif">360</text>
+              </svg>
+              <div className="flex flex-col text-left">
+                <span className="text-[0.8rem] font-medium text-primary leading-tight">360° View</span>
+                <span className="text-[0.65rem] text-white/60 leading-tight mt-0.5">Virtual Tour</span>
+              </div>
+            </div>
+            <ChevronRight className="text-primary/70 group-hover:text-primary transition-colors ml-1 w-4 h-4 shrink-0" />
+          </Link>
+        </div>
+
         <div className="hidden md:block w-px h-12 bg-white/10" />
 
         <div className="order-3 md:order-none flex flex-row md:flex-col items-center md:justify-center text-left md:text-center w-full md:w-auto gap-3 md:gap-0">
