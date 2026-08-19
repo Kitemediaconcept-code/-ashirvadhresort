@@ -244,7 +244,7 @@ export function Hero() {
         {/* Professional smooth dark gradient overlay for text readability */}
         <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#15120F] via-[#15120F]/40 to-transparent pointer-events-none" />
 
-      <div className="container mx-auto px-5 md:px-12 lg:px-20 xl:px-24 relative z-10 w-full h-full flex flex-col justify-end pb-12 md:pb-0 md:justify-center gap-8 md:gap-12 lg:gap-16">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-24 relative z-10 w-full h-full flex flex-col justify-end pb-12 md:pb-0 md:justify-center gap-8 md:gap-12 lg:gap-16">
         {/* Main Typography */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -252,12 +252,12 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-4xl w-full"
         >
-          <h1 className="flex flex-col font-sans text-white mb-2 md:mb-6">
-            <span className="text-4xl md:text-6xl lg:text-[4.5rem] tracking-tight leading-tight md:mb-1">Your Sanctuary</span>
+          <h1 className="flex flex-col font-sans text-white mb-2 md:mb-6 text-left">
+            <span className="text-[2.25rem] md:text-6xl lg:text-[4.5rem] tracking-tight leading-tight md:mb-1">Your Sanctuary</span>
             <span className="hidden md:block text-6xl lg:text-[4.5rem] tracking-tight leading-tight md:mb-2">Awaits in</span>
-            <span className="text-[5.5rem] md:text-[6.5rem] lg:text-[7rem] leading-none text-[#DFCCA0] -mt-2 md:mt-0 font-rolinko">Wayanad</span>
+            <span className="text-[4.25rem] md:text-[6.5rem] lg:text-[7rem] leading-none text-[#DFCCA0] -mt-2 md:mt-0 font-rolinko">Wayanad</span>
           </h1>
-          <p className="text-base md:text-lg text-white/90 font-light max-w-xl mb-5 md:mb-8">
+          <p className="text-base md:text-lg text-white/90 font-light max-w-xl mb-5 md:mb-8 text-left">
             Luxury stays nestled in the heart of nature.
           </p>
 
