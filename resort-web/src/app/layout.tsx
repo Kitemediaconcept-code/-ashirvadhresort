@@ -10,12 +10,11 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ashirvadhresorts.com"),
-  title: {
-    default: "Ashirvadh Resorts Wayanad | Best Nature Resort in Wayanad",
-    template: "%s | Ashirvadh Resorts Wayanad",
-  },
-  description: "Ashirvadh Nature Resorts Wayanad — experience luxury nature stays, private cottages, and breathtaking hill views. One of the best resorts in Wayanad for families, couples & nature lovers.",
+  title: "Resorts in Wayand | Wedding venues in Wayanad",
+  description: "Looking for top resorts in Wayanad? Ashirvadh Resorts provides tranquil stays and elegant wedding venues in Kerala. View our packages and book your stay!",
   keywords: [
+    "Resorts in Wayand", 
+    "Wedding venues in Wayanad", 
     "ashirvadhresorts in wayanad",
     "ashirvadh resorts wayanad",
     "resorts in wayanad",
