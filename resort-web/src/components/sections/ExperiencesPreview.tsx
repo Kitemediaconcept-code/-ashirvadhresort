@@ -58,7 +58,7 @@ export function ExperiencesPreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3 className="text-3xl md:text-4xl font-serif leading-tight text-[#365b30]">
+          <h3 className="text-3xl md:text-4xl font-sans leading-tight text-[#365b30]">
             Here begins an adventure, a new gastronomic experience and harmony with nature.
           </h3>
         </motion.div>
@@ -79,6 +79,7 @@ export function ExperiencesPreview() {
               src={exp.image} 
               alt={exp.title} 
               fill 
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
               className="object-cover transition-transform duration-1000 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none" />
@@ -98,3 +99,5 @@ export function ExperiencesPreview() {
     </section>
   );
 }
+
+

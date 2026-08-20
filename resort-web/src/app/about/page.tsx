@@ -14,7 +14,7 @@ export default function AboutPage() {
         <h1 className="text-5xl md:text-6xl font-serif mb-8 text-black">Our Story</h1>
         
         <div className="relative w-full h-[60vh] min-h-[400px] rounded-[40px] overflow-hidden mb-16">
-          <Image src="/03.jpg" alt="About Ashirvadh" fill className="object-cover" />
+          <Image src="/03.jpg" alt="About Ashirvadh" fill priority sizes="100vw" className="object-cover" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
@@ -29,10 +29,10 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="relative h-64 rounded-2xl overflow-hidden mt-8">
-              <Image src="/exp-room.jpg" alt="Nature" fill className="object-cover" />
+              <Image src="/exp-room.jpg" alt="Nature" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
             </div>
             <div className="relative h-64 rounded-2xl overflow-hidden">
-              <Image src="/exp-amphi1.jpg" alt="Comfort" fill className="object-cover" />
+              <Image src="/exp-amphi1.jpg" alt="Comfort" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
             </div>
           </div>
         </div>
@@ -40,3 +40,5 @@ export default function AboutPage() {
     </div>
   );
 }
+
+

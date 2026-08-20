@@ -24,23 +24,24 @@ function AutoSlideImage({ images, alt }: { images: string[], alt: string }) {
 
   return (
     <div className="absolute inset-0 overflow-hidden w-full h-full">
-      <AnimatePresence initial={false}>
-        <motion.div
-          key={currentIndex}
-          initial={{ x: "100%" }}
-          animate={{ x: 0 }}
-          exit={{ x: "-100%" }}
-          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
-          className="absolute inset-0 w-full h-full"
-        >
-          <Image
-            src={images[currentIndex]}
-            alt={`${alt} ${currentIndex + 1}`}
-            fill
-            className="object-cover transition-transform duration-1000 group-hover:scale-105"
-          />
-        </motion.div>
-      </AnimatePresence>
+      <motion.div 
+        className="flex w-full h-full"
+        animate={{ x: `-${currentIndex * 100}%` }}
+        transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
+      >
+        {images.map((src, idx) => (
+          <div key={idx} className="relative w-full h-full shrink-0">
+            <Image
+              src={src}
+              alt={`${alt} ${idx + 1}`}
+              fill
+              sizes="(max-width: 768px) 85vw, (max-width: 1024px) 420px, 33vw"
+              priority={idx === 0}
+              className="object-cover transition-transform duration-1000 group-hover:scale-105"
+            />
+          </div>
+        ))}
+      </motion.div>
     </div>
   );
 }
@@ -137,3 +138,5 @@ export function CatalogCarousel() {
     </section>
   );
 }
+
+

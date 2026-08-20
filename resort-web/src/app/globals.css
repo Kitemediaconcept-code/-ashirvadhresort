@@ -15,8 +15,8 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  --font-sans: 'Manrope', sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --font-sans: var(--font-manrope), sans-serif;
+  --font-serif: 'Rolinko', serif;
   --font-rolinko: 'Rolinko', serif;
 }
 

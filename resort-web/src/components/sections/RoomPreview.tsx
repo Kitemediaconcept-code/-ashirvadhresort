@@ -39,7 +39,7 @@ export function RoomPreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3 className="text-xl md:text-4xl font-serif leading-tight text-[#365b30]">
+          <h3 className="text-xl md:text-4xl font-sans leading-tight text-[#365b30]">
             Wake up to the sound of birds and enjoy the view of lush forests, hills, and waters.
           </h3>
         </motion.div>
@@ -60,6 +60,7 @@ export function RoomPreview() {
               src={room.image} 
               alt={room.title} 
               fill 
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
               className="object-cover transition-transform duration-1000 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
@@ -79,3 +80,5 @@ export function RoomPreview() {
     </section>
   );
 }
+
+

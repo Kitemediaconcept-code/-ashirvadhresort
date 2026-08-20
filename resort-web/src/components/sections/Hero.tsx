@@ -15,6 +15,7 @@ const mobileFrame = (index: number) =>
 
 export function Hero() {
   const [timeLeft, setTimeLeft] = useState({ days: 10, hours: 8, minutes: 32, seconds: 45 });
+  const [isLaunched, setIsLaunched] = useState(false);
   const desktopCanvasRef = useRef<HTMLCanvasElement>(null);
   const mobileCanvasRef = useRef<HTMLCanvasElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -22,18 +23,41 @@ export function Hero() {
   const mobileImagesRef = useRef<HTMLImageElement[]>([]);
 
   useEffect(() => {
-    // Preload images for smooth animation
+    // Preload first few images for smooth initial animation without blocking network
     if (typeof window !== "undefined") {
       if (desktopImagesRef.current.length === 0) {
-        for (let i = 1; i <= desktopFrameCount; i++) {
+        // Immediately load first 5 frames for quick initial interaction
+        const initialLoadCount = 5;
+        
+        for (let i = 1; i <= Math.min(initialLoadCount, desktopFrameCount); i++) {
           const img = new window.Image();
           img.src = desktopFrame(i);
           desktopImagesRef.current.push(img);
         }
-        for (let i = 1; i <= mobileFrameCount; i++) {
+        for (let i = 1; i <= Math.min(initialLoadCount, mobileFrameCount); i++) {
           const img = new window.Image();
           img.src = mobileFrame(i);
           mobileImagesRef.current.push(img);
+        }
+
+        // Defer loading the rest to avoid blocking LCP and Time-to-Interactive
+        const loadRemainingFrames = () => {
+          for (let i = initialLoadCount + 1; i <= desktopFrameCount; i++) {
+            const img = new window.Image();
+            img.src = desktopFrame(i);
+            desktopImagesRef.current.push(img);
+          }
+          for (let i = initialLoadCount + 1; i <= mobileFrameCount; i++) {
+            const img = new window.Image();
+            img.src = mobileFrame(i);
+            mobileImagesRef.current.push(img);
+          }
+        };
+
+        if ('requestIdleCallback' in window) {
+          window.requestIdleCallback(loadRemainingFrames);
+        } else {
+          setTimeout(loadRemainingFrames, 2000);
         }
       }
     }
@@ -159,6 +183,7 @@ export function Hero() {
       const distance = targetDate - now;
 
       if (distance < 0) {
+        setIsLaunched(true);
         clearInterval(interval);
         return;
       }
@@ -288,76 +313,80 @@ export function Hero() {
     </div>
 
     {/* Launch Bars - Rendered completely after the Hero section */}
-    <div className="w-full bg-white relative z-20 flex flex-col items-center justify-center py-10 md:py-16 px-4 md:px-12 lg:px-20 xl:px-24">
-      {/* Mobile Launch Bar */}
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
-        transition={{ duration: 0.8 }}
-        className="flex md:hidden w-full max-w-[340px] bg-[#17130F] border border-[#3E3122]/40 rounded-3xl p-5 flex-col items-start justify-start gap-5 shadow-2xl"
-      >
-        {launchBarContent}
-      </motion.div>
+    {!isLaunched && (
+      <div className="w-full bg-white relative z-20 flex flex-col items-center justify-center py-10 md:py-16 px-4 md:px-12 lg:px-20 xl:px-24">
+        {/* Mobile Launch Bar */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.8 }}
+          className="flex md:hidden w-full max-w-[340px] bg-[#17130F] border border-[#3E3122]/40 rounded-3xl p-5 flex-col items-start justify-start gap-5 shadow-2xl"
+        >
+          {launchBarContent}
+        </motion.div>
 
-      {/* Desktop Launch Bar */}
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
-        transition={{ duration: 0.8 }}
-        className="hidden md:flex w-full max-w-[1400px] bg-[#17130F] border border-[#3E3122]/40 rounded-3xl lg:rounded-[2rem] p-6 lg:p-8 flex-row items-center justify-between gap-6 lg:gap-10 shadow-2xl"
-      >
-        {/* Left: Countdown */}
-        <div className="flex flex-col gap-3">
-          <h3 className="text-white/90 text-sm font-medium tracking-wide">Grand Launch</h3>
-          <div className="flex items-center gap-6 lg:gap-8">
-            <div className="flex flex-col items-center">
-              <span className="text-[#DFCCA0] text-4xl lg:text-[2.75rem] font-serif leading-none">{String(timeLeft.days).padStart(2, '0')}</span>
-              <span className="text-white/60 text-[0.65rem] lg:text-xs mt-1.5 tracking-widest uppercase font-light">Days</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-[#DFCCA0] text-4xl lg:text-[2.75rem] font-serif leading-none">{String(timeLeft.hours).padStart(2, '0')}</span>
-              <span className="text-white/60 text-[0.65rem] lg:text-xs mt-1.5 tracking-widest uppercase font-light">Hours</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-[#DFCCA0] text-4xl lg:text-[2.75rem] font-serif leading-none">{String(timeLeft.minutes).padStart(2, '0')}</span>
-              <span className="text-white/60 text-[0.65rem] lg:text-xs mt-1.5 tracking-widest uppercase font-light">Minutes</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-[#DFCCA0] text-4xl lg:text-[2.75rem] font-serif leading-none">{String(timeLeft.seconds).padStart(2, '0')}</span>
-              <span className="text-white/60 text-[0.65rem] lg:text-xs mt-1.5 tracking-widest uppercase font-light">Seconds</span>
+        {/* Desktop Launch Bar */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.8 }}
+          className="hidden md:flex w-full max-w-[1400px] bg-[#17130F] border border-[#3E3122]/40 rounded-3xl lg:rounded-[2rem] p-6 lg:p-8 flex-row items-center justify-between gap-6 lg:gap-10 shadow-2xl"
+        >
+          {/* Left: Countdown */}
+          <div className="flex flex-col gap-3">
+            <h3 className="text-white/90 text-sm font-medium tracking-wide">Grand Launch</h3>
+            <div className="flex items-center gap-6 lg:gap-8">
+              <div className="flex flex-col items-center">
+                <span className="text-[#DFCCA0] text-4xl lg:text-[2.75rem] font-serif leading-none">{String(timeLeft.days).padStart(2, '0')}</span>
+                <span className="text-white/60 text-[0.65rem] lg:text-xs mt-1.5 tracking-widest uppercase font-light">Days</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="text-[#DFCCA0] text-4xl lg:text-[2.75rem] font-serif leading-none">{String(timeLeft.hours).padStart(2, '0')}</span>
+                <span className="text-white/60 text-[0.65rem] lg:text-xs mt-1.5 tracking-widest uppercase font-light">Hours</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="text-[#DFCCA0] text-4xl lg:text-[2.75rem] font-serif leading-none">{String(timeLeft.minutes).padStart(2, '0')}</span>
+                <span className="text-white/60 text-[0.65rem] lg:text-xs mt-1.5 tracking-widest uppercase font-light">Minutes</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="text-[#DFCCA0] text-4xl lg:text-[2.75rem] font-serif leading-none">{String(timeLeft.seconds).padStart(2, '0')}</span>
+                <span className="text-white/60 text-[0.65rem] lg:text-xs mt-1.5 tracking-widest uppercase font-light">Seconds</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Vertical Divider */}
-        <div className="w-px h-20 bg-white/10 hidden md:block" />
+          {/* Vertical Divider */}
+          <div className="w-px h-20 bg-white/10 hidden md:block" />
 
-        {/* Middle: Details */}
-        <div className="flex flex-col gap-3.5">
-          <div className="flex items-center gap-3 text-white/80">
-            <CalendarDays className="w-4 h-4 lg:w-4.5 lg:h-4.5 text-[#D1BD8A]" strokeWidth={1.5} />
-            <span className="text-sm lg:text-base font-light tracking-wide">23/08/2026, Sunday</span>
+          {/* Middle: Details */}
+          <div className="flex flex-col gap-3.5">
+            <div className="flex items-center gap-3 text-white/80">
+              <CalendarDays className="w-4 h-4 lg:w-4.5 lg:h-4.5 text-[#D1BD8A]" strokeWidth={1.5} />
+              <span className="text-sm lg:text-base font-light tracking-wide">23/08/2026, Sunday</span>
+            </div>
+            <div className="flex items-center gap-3 text-white/80">
+              <Clock className="w-4 h-4 lg:w-4.5 lg:h-4.5 text-[#D1BD8A]" strokeWidth={1.5} />
+              <span className="text-sm lg:text-base font-light tracking-wide">5:00 PM</span>
+            </div>
+            <div className="flex items-center gap-3 text-white/80">
+              <MapPin className="w-4 h-4 lg:w-4.5 lg:h-4.5 text-[#D1BD8A]" strokeWidth={1.5} />
+              <span className="text-sm lg:text-base font-light tracking-wide">Krishnagiri, Wayanad</span>
+            </div>
           </div>
-          <div className="flex items-center gap-3 text-white/80">
-            <Clock className="w-4 h-4 lg:w-4.5 lg:h-4.5 text-[#D1BD8A]" strokeWidth={1.5} />
-            <span className="text-sm lg:text-base font-light tracking-wide">5:00 PM</span>
-          </div>
-          <div className="flex items-center gap-3 text-white/80">
-            <MapPin className="w-4 h-4 lg:w-4.5 lg:h-4.5 text-[#D1BD8A]" strokeWidth={1.5} />
-            <span className="text-sm lg:text-base font-light tracking-wide">Krishnagiri, Wayanad</span>
-          </div>
-        </div>
 
-        {/* Right: Button */}
-        <div className="flex-shrink-0 ml-auto">
-          <button className="bg-[#D2B980] hover:bg-[#EBD3A0] text-[#1A140E] px-6 lg:px-10 py-4 lg:py-5 rounded-xl font-medium text-sm transition-colors text-center shadow-lg shadow-black/20 leading-relaxed">
-            Be the first to experience<br />Ashirvadh Nature Resort
-          </button>
-        </div>
-      </motion.div>
-    </div>
+          {/* Right: Button */}
+          <div className="flex-shrink-0 ml-auto">
+            <button className="bg-[#D2B980] hover:bg-[#EBD3A0] text-[#1A140E] px-6 lg:px-10 py-4 lg:py-5 rounded-xl font-medium text-sm transition-colors text-center shadow-lg shadow-black/20 leading-relaxed">
+              Be the first to experience<br />Ashirvadh Nature Resort
+            </button>
+          </div>
+        </motion.div>
+      </div>
+    )}
     </>
   );
 }
+
+

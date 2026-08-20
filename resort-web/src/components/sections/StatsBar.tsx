@@ -13,11 +13,11 @@ export function StatsBar() {
         viewport={{ once: true }}
         className="border border-white/10 rounded-[32px] md:rounded-[48px] p-6 md:p-8 bg-[#0a0a0a] grid grid-cols-2 md:flex md:flex-row flex-wrap lg:flex-nowrap items-start md:items-center justify-between gap-y-8 gap-x-4 md:gap-4 shadow-2xl"
       >
-        <div className="order-1 md:order-none flex flex-row md:flex-col items-center md:justify-center text-left md:text-center w-full md:w-auto gap-3 md:gap-0">
+        <div className="order-1 md:order-none col-span-2 md:col-span-1 flex flex-row md:flex-col items-center md:justify-center text-left md:text-center w-full md:w-auto gap-3 md:gap-0">
           <Leaf className="text-primary mb-0 md:mb-2 shrink-0" size={24} />
           <div className="flex flex-col">
-            <span className="text-sm font-medium text-white">Premium Eco-Resort</span>
-            <span className="text-xs text-white/50">Without Compromise</span>
+            <span className="text-sm font-medium text-white whitespace-nowrap">Premium Eco-Resort</span>
+            <span className="text-xs text-white/50 whitespace-nowrap">Without Compromise</span>
           </div>
         </div>
         
@@ -112,3 +112,5 @@ export function StatsBar() {
     </section>
   );
 }
+
+

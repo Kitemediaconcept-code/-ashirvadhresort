@@ -24,8 +24,8 @@ export function AboutPreview() {
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#2b3a2a]">About Us</h2>
 
-          <h3 className="text-xl md:text-2xl font-serif leading-relaxed text-[#2b3a2a]/90">
-            Ashirvadh Resorts in Wayanad — crafting the perfect conditions for relaxation, where every guest finds tranquility in the embrace of nature.
+          <h3 className="text-xl md:text-2xl font-sans leading-relaxed text-[#2b3a2a]/90">
+            Ashirvadh Resorts in Wayanad crafting the perfect conditions for relaxation, where every guest finds tranquility in the embrace of nature.
           </h3>
         </div>
 
@@ -58,6 +58,7 @@ export function AboutPreview() {
             src="/03.jpg"
             alt="Ashirvadh Nature Resort"
             fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover hover:scale-105 transition-transform duration-1000"
           />
         </div>
@@ -107,3 +108,5 @@ export function AboutPreview() {
     </section>
   );
 }
+
+

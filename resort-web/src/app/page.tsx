@@ -6,12 +6,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" }
 };
 
+import dynamic from 'next/dynamic';
 import { Hero } from "@/components/sections/Hero";
 import { StatsBar } from "@/components/sections/StatsBar";
 import { CatalogCarousel } from "@/components/sections/CatalogCarousel";
-import { AboutPreview } from "@/components/sections/AboutPreview";
-import { RoomPreview } from "@/components/sections/RoomPreview";
-import { ExperiencesPreview } from "@/components/sections/ExperiencesPreview";
+
+const AboutPreview = dynamic(() => import('@/components/sections/AboutPreview').then(mod => mod.AboutPreview), { ssr: true });
+const RoomPreview = dynamic(() => import('@/components/sections/RoomPreview').then(mod => mod.RoomPreview), { ssr: true });
+const ExperiencesPreview = dynamic(() => import('@/components/sections/ExperiencesPreview').then(mod => mod.ExperiencesPreview), { ssr: true });
 
 export default function Home() {
   return (
@@ -27,3 +29,5 @@ export default function Home() {
     </div>
   );
 }
+
+

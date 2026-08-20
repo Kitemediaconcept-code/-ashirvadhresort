@@ -27,7 +27,7 @@ export default function ContactPage() {
           {/* Contact Details */}
           <div className="space-y-12">
             <div>
-              <h3 className="text-2xl font-serif mb-6">Get in Touch</h3>
+              <h3 className="text-2xl font-sans mb-6">Get in Touch</h3>
               <ul className="space-y-6">
                 <li className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
@@ -74,7 +74,7 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="bg-gray-50 p-8 md:p-10 rounded-[32px] border border-black/5">
-            <h3 className="text-2xl font-serif mb-8 text-black">Send an Inquiry</h3>
+            <h3 className="text-2xl font-sans mb-8 text-black">Send an Inquiry</h3>
             
             {status === "success" ? (
               <div className="h-full min-h-[300px] flex flex-col items-center justify-center text-center">
@@ -115,3 +115,5 @@ export default function ContactPage() {
     </div>
   );
 }
+
+

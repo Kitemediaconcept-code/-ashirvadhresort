@@ -64,9 +64,12 @@ export function ExcellenceAwards() {
           src="/room-2.png" 
           alt="Award winning architecture" 
           fill 
+          sizes="(max-width: 1024px) 100vw, 50vw"
           className="object-cover hover:scale-105 transition-transform duration-1000"
         />
       </motion.div>
     </section>
   );
 }
+
+
