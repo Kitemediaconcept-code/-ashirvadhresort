@@ -9,6 +9,10 @@ const rooms = [
   { id: 1, title: "Cottages", image: "/cottages1.jpg", capacity: "1 - 2 Guests" },
   { id: 2, title: "Pool Villas", image: "/poolvilla.png", capacity: "1 - 4 Guests" },
   { id: 3, title: "Villas", image: "/villa2.jpg", capacity: "1 - 6 Guests" },
+  { id: 4, title: "One-Bedroom Pool Villa", image: "/one-bedroom-pool-villa.jpg", capacity: "1 - 2 Guests" },
+  { id: 5, title: "Two-Bedroom Cottage", image: "/two-bedroom-cottage.jpg", capacity: "1 - 4 Guests" },
+  { id: 6, title: "Deluxe Cottage - King Bed", image: "/deluxe-cottage-king-bed.jpg", capacity: "1 - 2 Guests" },
+  { id: 7, title: "Deluxe Cottage - Twin Beds", image: "/deluxe-cottage-twin-beds.jpg", capacity: "1 - 2 Guests" },
 ];
 
 export function RoomPreview() {
@@ -60,10 +64,7 @@ export function RoomPreview() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
             
-            {/* Top Tag */}
-            <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm text-black px-4 py-1.5 rounded-full text-xs font-medium">
-              {room.capacity}
-            </div>
+
             
             {/* Bottom Content */}
             <Link href="/rooms" className="absolute bottom-6 left-6 right-6 flex items-center justify-between">

@@ -12,6 +12,10 @@ const allRooms = [
   { id: 1, title: "Cottages", image: "/cottages1.jpg", capacity: "1 - 2 Guests", desc: "Cozy architectural marvel perfect for romantic getaways." },
   { id: 2, title: "Pool Villas", image: "/poolvilla.png", capacity: "1 - 4 Guests", desc: "Spacious cottage with a private balcony overlooking the forest." },
   { id: 3, title: "Villas", image: "/villa2.jpg", capacity: "1 - 6 Guests", desc: "Expansive villa featuring multiple bedrooms and premium amenities." },
+  { id: 4, title: "One-Bedroom Pool Villa", image: "/one-bedroom-pool-villa.jpg", capacity: "1 - 2 Guests", desc: "A serene retreat featuring a private pool and elegant interiors." },
+  { id: 5, title: "Two-Bedroom Cottage", image: "/two-bedroom-cottage.jpg", capacity: "1 - 4 Guests", desc: "Perfect for families, offering ample space and stunning views." },
+  { id: 6, title: "Deluxe Cottage - King Bed", image: "/deluxe-cottage-king-bed.jpg", capacity: "1 - 2 Guests", desc: "Luxurious cottage with a king-size bed and premium comfort." },
+  { id: 7, title: "Deluxe Cottage - Twin Beds", image: "/deluxe-cottage-twin-beds.jpg", capacity: "1 - 2 Guests", desc: "Comfortable and spacious cottage with twin beds." },
 ];
 
 export default function RoomsPage() {
@@ -32,9 +36,7 @@ export default function RoomsPage() {
                 <Image src={room.image} alt={room.title} fill className="object-cover" />
               </div>
               <div className="w-full md:w-1/2 space-y-6">
-                <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                  {room.capacity}
-                </div>
+
                 <h2 className="text-3xl md:text-4xl font-serif text-black">{room.title}</h2>
                 <p className="text-gray-700 leading-relaxed">
                   {room.desc}
