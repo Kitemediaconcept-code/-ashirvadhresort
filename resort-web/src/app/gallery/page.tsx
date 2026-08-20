@@ -2,8 +2,8 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gallery | Photos of Ashirvadh Nature Resort Wayanad",
-  description: "View photos of the pristine nature, luxurious cottages, and premium facilities at Ashirvadh Nature Resort in Wayanad, Kerala.",
+  title: "wayanad resorts with private pool | Resorts in Krishnagiri",
+  description: "Get a glimpse of paradise! View photos of Ashirvadh Resorts, featuring luxury Wayanad resorts with private pool in Krishnagiri. Plan your dream getaway now.",
   alternates: { canonical: "/gallery/" }
 };
 
@@ -41,7 +41,7 @@ export default function GalleryPage() {
             <h1 className="text-5xl md:text-7xl font-sans tracking-tight font-medium text-black">Photo Gallery</h1>
           </div>
           <p className="text-gray-700 max-w-xs mt-6 md:mt-0 text-sm md:text-base md:text-right leading-relaxed">
-            Captured moments from our nature resort and scenic surroundings.
+            Captured moments showcasing our nature resort in Wayanad, scenic surroundings, and private pool villas.
           </p>
         </div>
         

@@ -19,7 +19,7 @@ export default function ContactPage() {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-serif mb-6 text-black">Contact Us</h1>
           <p className="text-gray-700 text-lg">
-            We would love to hear from you. Reach out for bookings, inquiries, or just to say hello.
+            Planning your special day at top wedding venues in Wayanad? We would love to hear from you — reach out for bookings, inquiries, or just to say hello.
           </p>
         </div>
 

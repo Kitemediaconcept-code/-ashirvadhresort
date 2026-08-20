@@ -25,13 +25,13 @@ export function AboutPreview() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#2b3a2a]">About Us</h2>
 
           <h3 className="text-xl md:text-2xl font-sans leading-relaxed text-[#2b3a2a]/90">
-            Ashirvadh Resorts in Wayanad crafting the perfect conditions for relaxation, where every guest finds tranquility in the embrace of nature.
+            As one of the top resorts in Wayanad, Ashirvadh Resorts crafts the perfect conditions for relaxation, where every guest finds tranquility in the embrace of nature.
           </h3>
         </div>
 
         <div className="text-sm text-[#2b3a2a]/70 leading-relaxed max-w-md space-y-4">
           <p>
-            At Ashirvadh Resorts Wayanad, we offer more than just a stay — we offer an experience. Surrounded by lush greenery, misty hills, and breathtaking landscapes, our resort stands among the finest resorts in Wayanad, crafted for your comfort and peace.
+            At Ashirvadh Resorts, we offer more than just a stay — we offer an experience. Surrounded by lush greenery, misty hills, and breathtaking landscapes, our property stands among the finest choices in the region, crafted for your comfort and peace.
           </p>
         </div>
 

@@ -2,8 +2,8 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Luxury Eco-Resort in Wayanad",
-  description: "Learn about the story, vision, and eco-friendly hospitality philosophy of Ashirvadh Nature Resort, the premier luxury getaway in Wayanad, Kerala.",
+  title: "Resorts in Krishnagiri | wayanad resorts with private pool",
+  description: "Looking for luxury resorts in Krishnagiri? Learn about Ashirvadh Resorts—offering premium Wayanad resorts with private pool stays, nature, and comfort.",
   alternates: { canonical: "/about/" }
 };
 
@@ -21,10 +21,10 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-serif mb-6 text-primary">A Vision of Tranquility</h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              Ashirvadh Nature Resort was born out of a desire to create a sanctuary where modern luxury meets untouched nature. Nestled in the heart of Wayanad, we believe in providing our guests with an experience that rejuvenates the mind, body, and soul.
+              Ashirvadh Nature Resort was born out of a desire to create a sanctuary where modern luxury meets untouched nature. Situated in Krishnagiri, Wayanad, we stand out among top resorts in Krishnagiri by providing our guests with an experience that rejuvenates the mind, body, and soul.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Our hospitality philosophy is simple: every guest is treated like royalty, yet feels entirely at home. We have carefully curated every aspect of our resort—from our eco-friendly architecture to our locally-sourced culinary delights—to ensure your stay is unforgettable.
+              Our hospitality philosophy is simple: every guest is treated like royalty, yet feels entirely at home. We have carefully curated every aspect of our resort from our eco-friendly architecture to our locally-sourced culinary delights—to ensure your stay is unforgettable.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">

@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Luxury Cottages & Rooms in Wayanad | Ashirvadh Resort",
-  description: "Explore our luxurious cottages, villas, and lake view rooms in Wayanad. Perfect accommodations designed for comfort and nature immersion in Kerala.",
+  title: "Best resorts in Wayanad for family | Resorts in Wayand",
+  description: "Discover one of the best resorts in Wayanad for family. Explore spacious rooms, luxury family suites, and scenic views at Ashirvad Resorts. Book your stay!",
   alternates: { canonical: "/rooms/" }
 };
 
@@ -13,7 +13,7 @@ const allRooms = [
   { id: 2, title: "Pool Villas", image: "/poolvilla.png", capacity: "1 - 4 Guests", desc: "Spacious cottage with a private balcony overlooking the forest." },
   { id: 3, title: "Villas", image: "/villa2.jpg", capacity: "1 - 6 Guests", desc: "Expansive villa featuring multiple bedrooms and premium amenities." },
   { id: 4, title: "One-Bedroom Pool Villa", image: "/one-bedroom-pool-villa.jpg", capacity: "1 - 2 Guests", desc: "A serene retreat featuring a private pool and elegant interiors." },
-  { id: 5, title: "Two-Bedroom Cottage", image: "/two-bedroom-cottage.jpg", capacity: "1 - 4 Guests", desc: "Perfect for families, offering ample space and stunning views." },
+  { id: 5, title: "Two-Bedroom Cottage", image: "/two-bedroom-cottage.jpg", capacity: "1 - 4 Guests", desc: "Recognized among the best resorts in Wayanad for family vacations, our property features ample space and stunning views for an unforgettable getaway" },
   { id: 6, title: "Deluxe Cottage - King Bed", image: "/deluxe-cottage-king-bed.jpg", capacity: "1 - 2 Guests", desc: "Luxurious cottage with a king-size bed and premium comfort." },
   { id: 7, title: "Deluxe Cottage - Twin Beds", image: "/deluxe-cottage-twin-beds.jpg", capacity: "1 - 2 Guests", desc: "Comfortable and spacious cottage with twin beds." },
 ];
