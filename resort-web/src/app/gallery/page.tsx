@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const images = [
-  "/main5.png",
+  "/villa2.jpg",
   "/r1.png",
   "/r2.png",
   "/r4.png",
@@ -17,7 +17,7 @@ const images = [
   "/r7.png",
   "/r8.png",
   "/r9.png",
-  "/r10.png",
+  "/deluxe-cottage-king-bed.jpg",
   "/r11.png",
   "/r12.png",
   "/08.jpg",
