@@ -118,7 +118,7 @@ export function CatalogCarousel() {
           View Catalog
         </button>
 
-        <div className="flex gap-3">
+        <div className="flex lg:hidden gap-3">
           <button 
             onClick={() => scroll("left")}
             className="w-12 h-12 bg-black hover:bg-black/80 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-colors"

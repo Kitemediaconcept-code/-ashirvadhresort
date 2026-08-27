@@ -2,21 +2,21 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Leaf, TreePine, Waves, Mountain } from "lucide-react";
+import { Leaf, Music, Waves, Flame } from "lucide-react";
 const experiences = [
   {
     id: 1,
     icon: Leaf,
-    title: "Nature Trails",
+    title: "Amphitheater",
     desc: "Explore scenic forest paths",
     image: "/exp-amphi2.jpg",
   },
   {
     id: 2,
-    icon: TreePine,
-    title: "CANOPY SUITE",
-    desc: "Stay Close to Nature",
-    image: "/08.jpg",
+    icon: Music,
+    title: "DJ Hall",
+    desc: "Dance the night away",
+    image: "/dj hall.JPG",
   },
   {
     id: 3,
@@ -27,10 +27,10 @@ const experiences = [
   },
   {
     id: 4,
-    icon: Mountain,
-    title: "Adventure Activities",
-    desc: "Live the thrill outdoors",
-    image: "/exp-amphi1.jpg",
+    icon: Flame,
+    title: "Campfire Nights",
+    desc: "Warm evenings under the stars",
+    image: "/campfire night.png",
   },
 ];
 
