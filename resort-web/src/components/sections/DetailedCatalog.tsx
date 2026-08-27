@@ -6,6 +6,16 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
+type CatalogItem = {
+  title: string;
+  description: string;
+  images?: string[];
+  image?: string;
+  link: string;
+  linkText: string;
+  isWide?: boolean;
+};
+
 function AutoSlideImage({ images, alt }: { images: string[], alt: string }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -34,7 +44,7 @@ function AutoSlideImage({ images, alt }: { images: string[], alt: string }) {
   );
 }
 
-const catalogData = [
+const catalogData: { category: string; viewAllLink: string; items: CatalogItem[] }[] = [
   {
     category: "Cottages",
     viewAllLink: "/rooms",
