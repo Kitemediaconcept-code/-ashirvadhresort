@@ -23,44 +23,50 @@ export function Hero() {
   const mobileImagesRef = useRef<HTMLImageElement[]>([]);
 
   useEffect(() => {
-    // Preload first few images for smooth initial animation without blocking network
-    if (typeof window !== "undefined") {
-      if (desktopImagesRef.current.length === 0) {
-        // Immediately load first 5 frames for quick initial interaction
-        const initialLoadCount = 5;
-        
-        for (let i = 1; i <= Math.min(initialLoadCount, desktopFrameCount); i++) {
-          const img = new window.Image();
-          img.src = desktopFrame(i);
-          desktopImagesRef.current.push(img);
-        }
-        for (let i = 1; i <= Math.min(initialLoadCount, mobileFrameCount); i++) {
-          const img = new window.Image();
-          img.src = mobileFrame(i);
-          mobileImagesRef.current.push(img);
-        }
+    if (typeof window === "undefined") return;
 
-        // Defer loading the rest to avoid blocking LCP and Time-to-Interactive
-        const loadRemainingFrames = () => {
-          for (let i = initialLoadCount + 1; i <= desktopFrameCount; i++) {
-            const img = new window.Image();
-            img.src = desktopFrame(i);
-            desktopImagesRef.current.push(img);
-          }
-          for (let i = initialLoadCount + 1; i <= mobileFrameCount; i++) {
-            const img = new window.Image();
-            img.src = mobileFrame(i);
-            mobileImagesRef.current.push(img);
-          }
-        };
+    const loadFramesForDevice = (isMobile: boolean) => {
+      const imagesRef = isMobile ? mobileImagesRef : desktopImagesRef;
+      const count = isMobile ? mobileFrameCount : desktopFrameCount;
+      const getFrameSrc = isMobile ? mobileFrame : desktopFrame;
 
-        if ('requestIdleCallback' in window) {
-          window.requestIdleCallback(loadRemainingFrames);
-        } else {
-          setTimeout(loadRemainingFrames, 2000);
-        }
+      if (imagesRef.current.length > 0) return; // already loaded or loading
+
+      const initialLoadCount = 5;
+
+      // Load first 5 frames immediately for fast interactive start
+      for (let i = 1; i <= Math.min(initialLoadCount, count); i++) {
+        const img = new window.Image();
+        img.src = getFrameSrc(i);
+        imagesRef.current.push(img);
       }
-    }
+
+      // Load rest of the frames after LCP / Idle
+      const loadRemaining = () => {
+        for (let i = initialLoadCount + 1; i <= count; i++) {
+          const img = new window.Image();
+          img.src = getFrameSrc(i);
+          imagesRef.current.push(img);
+        }
+      };
+
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(loadRemaining);
+      } else {
+        setTimeout(loadRemaining, 1000);
+      }
+    };
+
+    const isMobileDevice = window.innerWidth < 768;
+    loadFramesForDevice(isMobileDevice);
+
+    const handleResize = () => {
+      const currentIsMobile = window.innerWidth < 768;
+      loadFramesForDevice(currentIsMobile);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const { scrollYProgress } = useScroll({
@@ -74,17 +80,14 @@ export function Hero() {
     restDelta: 0.001
   });
 
-  useMotionValueEvent(smoothProgress, "change", (latest) => {
-    if (typeof window === "undefined") return;
-    const isMobile = window.innerWidth < 768;
-
+  const drawFrame = (progress: number, isMobile: boolean) => {
     if (isMobile) {
       const canvas = mobileCanvasRef.current;
       if (!canvas) return;
       const context = canvas.getContext('2d', { alpha: false });
       if (!context) return;
 
-      const frameIdx = Math.max(1, Math.min(mobileFrameCount, Math.round(latest * mobileFrameCount)));
+      const frameIdx = Math.max(1, Math.min(mobileFrameCount, Math.round(progress * (mobileFrameCount - 1)) + 1));
       const img = mobileImagesRef.current[frameIdx - 1];
       
       if (img && img.complete) {
@@ -99,7 +102,7 @@ export function Hero() {
       const context = canvas.getContext('2d', { alpha: false });
       if (!context) return;
 
-      const frameIdx = Math.max(1, Math.min(desktopFrameCount, Math.round(latest * desktopFrameCount)));
+      const frameIdx = Math.max(1, Math.min(desktopFrameCount, Math.round(progress * (desktopFrameCount - 1)) + 1));
       const img = desktopImagesRef.current[frameIdx - 1];
       
       if (img && img.complete) {
@@ -109,7 +112,22 @@ export function Hero() {
         context.drawImage(img, x, y, img.width * scale, img.height * scale);
       }
     }
-  });
+  };
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const isMobile = window.innerWidth < 768;
+    // On mobile, subscribe directly to scrollYProgress (no spring delay/inertia calculation)
+    // On desktop, subscribe to smoothProgress for mouse-wheel smoothing
+    const motionValue = isMobile ? scrollYProgress : smoothProgress;
+
+    const unsubscribe = motionValue.on("change", (latest) => {
+      drawFrame(latest, isMobile);
+    });
+
+    return () => unsubscribe();
+  }, [scrollYProgress, smoothProgress]);
 
   useEffect(() => {
     const setCanvasSize = () => {

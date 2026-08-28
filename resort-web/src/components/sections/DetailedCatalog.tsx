@@ -29,17 +29,29 @@ function AutoSlideImage({ images, alt }: { images: string[], alt: string }) {
 
   return (
     <>
-      {images.map((src, i) => (
-        <Image
-          key={src}
-          src={src}
-          alt={`${alt} - Image ${i + 1}`}
-          fill
-          className={`object-cover transition-all duration-1000 group-hover:scale-105 ${
-            i === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
-        />
-      ))}
+      {images.map((src, i) => {
+        // Only render the active, next, and previous images in the DOM.
+        // This avoids fetching all 4-7 images per card simultaneously on initial load.
+        const isNear = 
+          i === currentIndex || 
+          i === (currentIndex + 1) % images.length || 
+          i === (currentIndex - 1 + images.length) % images.length;
+          
+        if (!isNear) return null;
+
+        return (
+          <Image
+            key={src}
+            src={src}
+            alt={`${alt} - Image ${i + 1}`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className={`object-cover transition-all duration-1000 group-hover:scale-105 ${
+              i === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
+          />
+        );
+      })}
     </>
   );
 }
@@ -183,7 +195,7 @@ export function DetailedCatalog() {
                         {item.images ? (
                           <AutoSlideImage images={item.images} alt={item.title} />
                         ) : (
-                          <Image src={item.image!} fill alt={item.title} className="object-cover transition-transform duration-1000 group-hover:scale-105" />
+                          <Image src={item.image!} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={item.title} className="object-cover transition-transform duration-1000 group-hover:scale-105" />
                         )}
                       </div>
                       
@@ -217,7 +229,7 @@ export function DetailedCatalog() {
                         {item.images ? (
                           <AutoSlideImage images={item.images} alt={item.title} />
                         ) : (
-                          <Image src={item.image!} fill alt={item.title} className="object-cover transition-transform duration-1000 group-hover:scale-105" />
+                          <Image src={item.image!} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={item.title} className="object-cover transition-transform duration-1000 group-hover:scale-105" />
                         )}
                       </div>
                       <div className="p-6 md:p-8 flex flex-col gap-3 md:gap-4 flex-1">
