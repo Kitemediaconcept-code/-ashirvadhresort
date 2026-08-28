@@ -9,9 +9,9 @@ const desktopFrameCount = 29;
 const desktopFrame = (index: number) => 
   `/mouse scroll desktop/frame_${index.toString().padStart(3, '0')}.jpg`;
 
-const mobileFrameCount = 32;
+const mobileFrameCount = 31;
 const mobileFrame = (index: number) => 
-  `/mobile mouse scroll animation/frame_${index.toString().padStart(3, '0')}.jpg`;
+  `/mobile mouse scroll/frame_${index.toString().padStart(3, '0')}.jpg`;
 
 export function Hero() {
   const [timeLeft, setTimeLeft] = useState({ days: 10, hours: 8, minutes: 32, seconds: 45 });
