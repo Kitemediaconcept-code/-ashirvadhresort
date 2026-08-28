@@ -5,9 +5,9 @@ import { motion, useScroll, useTransform, useMotionValueEvent, useSpring } from 
 import { CalendarDays, Clock, MapPin, Leaf, ConciergeBell, Waves, Flower2 } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 
-const desktopFrameCount = 46;
+const desktopFrameCount = 29;
 const desktopFrame = (index: number) => 
-  `/mouse scroll animation desktop/frame_${index.toString().padStart(3, '0')}.jpg`;
+  `/mouse scroll desktop/frame_${index.toString().padStart(3, '0')}.jpg`;
 
 const mobileFrameCount = 32;
 const mobileFrame = (index: number) => 
