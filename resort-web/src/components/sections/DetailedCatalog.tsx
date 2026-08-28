@@ -119,7 +119,7 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
     viewAllLink: "/rooms",
     items: [
       {
-        title: "PAPPER VILLA",
+        title: "PEPPER VILLA",
         description: "A secluded villa offering privacy, nature and peaceful moments.",
         images: [
           "/papper villa/TRD00698.jpg.jpeg",
