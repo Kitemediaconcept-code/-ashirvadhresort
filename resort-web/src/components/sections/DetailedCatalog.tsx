@@ -206,7 +206,7 @@ export function DetailedCatalog() {
                       </div>
                       
                       {/* Gradient Overlay for Text */}
-                      <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-3/5 bg-gradient-to-t md:bg-gradient-to-r from-[#F8F9FA] via-[#F8F9FA]/95 to-transparent z-10" />
+                      <div className="hidden md:block absolute md:inset-y-0 md:left-0 md:w-3/5 bg-gradient-to-r from-[#F8F9FA] via-[#F8F9FA]/95 to-transparent z-10" />
                       
                       <div className="relative z-20 p-8 md:p-12 w-full md:w-1/2 flex flex-col justify-end md:justify-center gap-4 mt-auto md:mt-0">
                         <h4 className="text-xs md:text-sm font-bold uppercase tracking-wider text-[#365b30]">{item.title}</h4>
