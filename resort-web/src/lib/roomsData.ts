@@ -73,7 +73,7 @@ export const roomsData: Record<string, RoomDetails> = {
     images: [
       '/CLOVE DELUX ROOMS/12.jpg.jpeg',
       '/CLOVE DELUX ROOMS/13-(1).jpg.jpeg',
-      '/CLOVE DELUX ROOMS/TRD00946-(1).jpg.jpeg'
+      '/CLOVE DELUX ROOMS/14.jpg.jpeg'
     ],
     specs: [
       { label: 'Forest View', type: 'sitout' },
