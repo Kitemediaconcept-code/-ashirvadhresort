@@ -62,20 +62,25 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
     viewAllLink: "/rooms",
     items: [
       {
-        title: "CARDOMON SUITE ROOMS",
+        title: "CARDAMOM SUITE ROOMS",
         description: "Spacious suites with a private sit-out, curated for comfort and calm.",
-        images: ["/cottages1 (1).jpg", "/cottages1 (2).jpg", "/cottages1 (3).jpg", "/cottages1.jpg"],
+        images: [
+          "/CARDAMOM SUITE ROOMS/05.jpg.jpeg",
+          "/CARDAMOM SUITE ROOMS/06.jpg.jpeg",
+          "/CARDAMOM SUITE ROOMS/07.jpg.jpeg",
+          "/CARDAMOM SUITE ROOMS/11.jpg.jpeg"
+        ],
         link: "/rooms",
         linkText: "Explore Room"
       },
       {
-        title: "CHINNAMON LUXURY ROOM",
+        title: "CINNAMON LUXURY ROOM",
         description: "Elegant luxury rooms with modern amenities and nature views.",
         images: [
-          "/CHINNAMON LUXURY ROOM/08.jpg.jpeg", 
-          "/CHINNAMON LUXURY ROOM/15.jpg.jpeg", 
-          "/CHINNAMON LUXURY ROOM/16.jpg.jpeg", 
-          "/CHINNAMON LUXURY ROOM/17.jpg.jpeg"
+          "/CINNAMON LUXURY ROOM/08.jpg.jpeg", 
+          "/CINNAMON LUXURY ROOM/15.jpg.jpeg", 
+          "/CINNAMON LUXURY ROOM/16.jpg.jpeg", 
+          "/CINNAMON LUXURY ROOM/17.jpg.jpeg"
         ],
         link: "/rooms",
         linkText: "Explore Room"
