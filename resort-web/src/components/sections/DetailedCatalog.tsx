@@ -167,7 +167,11 @@ export function DetailedCatalog() {
         {/* Categories */}
         <div className="flex flex-col gap-16 md:gap-24">
           {catalogData.map((category, catIdx) => (
-            <div key={catIdx} className="flex flex-col gap-8 md:gap-10">
+            <div 
+              key={catIdx} 
+              id={category.category.toLowerCase().replace(/\s+/g, '-')} 
+              className="flex flex-col gap-8 md:gap-10 scroll-mt-28"
+            >
               {/* Category Header */}
               <div className="flex items-center gap-4 md:gap-6">
                 <h3 className="text-2xl md:text-[28px] font-serif text-[#365b30] whitespace-nowrap">{category.category}</h3>
