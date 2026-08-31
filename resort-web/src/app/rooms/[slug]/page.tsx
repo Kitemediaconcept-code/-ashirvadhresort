@@ -98,7 +98,7 @@ export default async function RoomPage({ params }: PageProps) {
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-14">
           {/* Main Large Image */}
-          <div className="lg:col-span-2 relative aspect-[4/3] md:aspect-video rounded-[24px] overflow-hidden shadow-sm">
+          <div className="lg:col-span-2 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[350px] rounded-[24px] overflow-hidden shadow-sm">
             <Image
               src={mainImage}
               alt={`${room.title} - Main Gallery`}
