@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { ArrowRight, Calendar, Bed, Users, Maximize, Check, ChevronRight, Trees } from "lucide-react";
 import { roomsData } from "@/lib/roomsData";
+import { RoomGallery } from "@/components/sections/RoomGallery";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -40,10 +41,7 @@ export default async function RoomPage({ params }: PageProps) {
     notFound();
   }
 
-  // Gallery images division
-  const mainImage = room.images[0] || "/cottages1.jpg";
-  const rightImages = room.images.slice(1, 4); // Show up to 3 on the side
-  const remainingCount = room.images.length - 4;
+
 
   return (
     <div className="pt-32 pb-24 min-h-screen bg-[#FDFDFD] text-[#333333]">
@@ -95,57 +93,8 @@ export default async function RoomPage({ params }: PageProps) {
           })}
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-14">
-          {/* Main Large Image */}
-          <div className="lg:col-span-2 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[350px] rounded-[24px] overflow-hidden shadow-sm">
-            <Image
-              src={mainImage}
-              alt={`${room.title} - Main Gallery`}
-              fill
-              priority
-              className="object-cover hover:scale-[1.02] transition-transform duration-700"
-              sizes="(max-width: 1024px) 100vw, 66vw"
-            />
-          </div>
-
-          {/* Right Stack Images */}
-          <div className="grid grid-cols-3 lg:grid-cols-1 gap-4">
-            {rightImages.map((src, index) => {
-              const isLast = index === rightImages.length - 1;
-              const hasRemaining = remainingCount > 0;
-
-              return (
-                <div 
-                  key={src} 
-                  className="relative aspect-square lg:aspect-[3/2] rounded-[16px] overflow-hidden shadow-sm group"
-                >
-                  <Image
-                    src={src}
-                    alt={`${room.title} - Gallery Photo ${index + 2}`}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 1024px) 30vw, 33vw"
-                  />
-                  {isLast && hasRemaining && (
-                    <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white z-10">
-                      <span className="text-xl md:text-2xl font-serif font-semibold">+{remainingCount}</span>
-                      <span className="text-[10px] md:text-xs font-semibold uppercase tracking-wider">Photos</span>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-            
-            {/* Fallback empty blocks if room has fewer than 4 images to maintain clean layout grid */}
-            {rightImages.length < 3 && Array.from({ length: 3 - rightImages.length }).map((_, i) => (
-              <div 
-                key={i} 
-                className="hidden lg:block relative aspect-[3/2] rounded-[16px] bg-gray-50 border border-dashed border-gray-200"
-              />
-            ))}
-          </div>
-        </div>
+        {/* Room Gallery Section with Lightbox */}
+        <RoomGallery images={room.images} roomTitle={room.title} />
 
         {/* Content Section: Highlights & Booking Card split */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
