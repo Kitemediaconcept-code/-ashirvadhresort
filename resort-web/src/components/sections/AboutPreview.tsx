@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function AboutPreview() {
   return (
-    <section className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center text-[#2b3a2a] bg-white py-4 overflow-hidden">
+    <section className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center text-[#2b3a2a] bg-white py-4">
 
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
@@ -64,7 +64,7 @@ export function AboutPreview() {
         </div>
 
         {/* Floating Features Bar */}
-        <div className="lg:absolute lg:-bottom-12 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-[115%] bg-white border border-gray-100 rounded-[28px] p-6 shadow-xl z-20">
+        <div className="lg:absolute lg:-bottom-12 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-[115%] bg-white border border-gray-100 rounded-[28px] py-7 px-4 shadow-xl z-20">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-6 gap-x-2 lg:gap-0">
             {/* Feature 1 */}
             <div className="flex flex-col items-center justify-center gap-3 px-2">
