@@ -106,7 +106,7 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
         title: "COFFEE LAND POOL VILLA",
         description: "Private pool villas with scenic views and a touch of indulgence.",
         images: [
-          "/COFFEE LAND POOL VILLA/TRD00946-(1).jpg.jpeg",
+          "/COFFEE LAND POOL VILLA/TRD00873.jpg.jpeg",
           "/COFFEE LAND POOL VILLA/TRD01762.jpg.jpeg",
           "/COFFEE LAND POOL VILLA/TRD01785.jpg.jpeg",
           "/COFFEE LAND POOL VILLA/TRD01795.jpg.jpeg"
