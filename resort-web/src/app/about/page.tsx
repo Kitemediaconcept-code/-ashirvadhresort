@@ -14,7 +14,7 @@ export default function AboutPage() {
         <h1 className="text-5xl md:text-6xl font-serif mb-8 text-black">Our Story</h1>
         
         <div className="relative w-full h-[60vh] min-h-[400px] rounded-[40px] overflow-hidden mb-16">
-          <Image src="/03.jpg" alt="About Ashirvadh" fill priority sizes="100vw" className="object-cover" />
+          <Image src="/aboutphoto.jpeg" alt="About Ashirvadh" fill priority sizes="100vw" className="object-cover" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">

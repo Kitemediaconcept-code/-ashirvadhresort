@@ -55,7 +55,7 @@ export function AboutPreview() {
       >
         <div className="relative w-full aspect-[4/3] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl mb-8 md:mb-0">
           <Image
-            src="/03.jpg"
+            src="/aboutphoto.jpeg"
             alt="Ashirvadh Nature Resort"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
