@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import { ArrowRight, Calendar, Bed, Users, Maximize, Check, ChevronRight, Trees } from "lucide-react";
+import { ArrowRight, Calendar, Bed, Check, ChevronRight, Trees } from "lucide-react";
 import { roomsData } from "@/lib/roomsData";
 import { RoomGallery } from "@/components/sections/RoomGallery";
 
@@ -78,19 +78,19 @@ export default async function RoomPage({ params }: PageProps) {
 
         {/* Quick Specs Icons bar */}
         <div className="flex flex-wrap gap-x-8 gap-y-4 py-6 border-y border-gray-100 mb-10 text-sm font-medium text-gray-700">
-          {room.specs.map((spec, i) => {
-            let IconComponent = Trees;
-            if (spec.type === "bed") IconComponent = Bed;
-            if (spec.type === "guests") IconComponent = Users;
-            if (spec.type === "size") IconComponent = Maximize;
+          {room.specs
+            .filter((spec) => spec.type !== "guests" && spec.type !== "size")
+            .map((spec, i) => {
+              let IconComponent = Trees;
+              if (spec.type === "bed") IconComponent = Bed;
 
-            return (
-              <div key={i} className="flex items-center gap-3">
-                <IconComponent className="w-5 h-5 text-[#365b30]/80" />
-                <span>{spec.label}</span>
-              </div>
-            );
-          })}
+              return (
+                <div key={i} className="flex items-center gap-3">
+                  <IconComponent className="w-5 h-5 text-[#365b30]/80" />
+                  <span>{spec.label}</span>
+                </div>
+              );
+            })}
         </div>
 
         {/* Room Gallery Section with Lightbox */}
