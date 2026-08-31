@@ -3,7 +3,7 @@
 export function VirtualTourWidget() {
   return (
     <a
-      href="https://cybozom.com/360/ashirvad/"
+      href="https://cybozom.com/360/ashirvadresort/"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 left-6 z-50 w-14 h-14 bg-[#15120F] text-[#D1BD8A] border border-[#D1BD8A]/40 rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:scale-110 hover:bg-[#D1BD8A] hover:text-[#15120F] hover:border-transparent transition-all duration-300 group"
