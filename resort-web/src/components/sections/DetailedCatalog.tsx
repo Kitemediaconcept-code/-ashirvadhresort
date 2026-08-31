@@ -156,7 +156,7 @@ export function DetailedCatalog({ filterCategory }: { filterCategory?: "Cottages
     : catalogData;
 
   return (
-    <section className="bg-white text-[#365b30] py-16 w-full">
+    <section className="bg-white text-[#365b30] py-8 md:py-16 w-full">
       <div className="flex flex-col gap-20">
         
         {/* Header */}
