@@ -70,7 +70,7 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
           "/CARDAMOM SUITE ROOMS/07.jpg.jpeg",
           "/CARDAMOM SUITE ROOMS/11.jpg.jpeg"
         ],
-        link: "/rooms",
+        link: "/rooms/cardamom-suite-rooms",
         linkText: "Explore Room"
       },
       {
@@ -82,7 +82,7 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
           "/CINNAMON LUXURY ROOM/16.jpg.jpeg", 
           "/CINNAMON LUXURY ROOM/17.jpg.jpeg"
         ],
-        link: "/rooms",
+        link: "/rooms/cinnamon-luxury-room",
         linkText: "Explore Room"
       },
       {
@@ -93,7 +93,7 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
           "/CLOVE DELUX ROOMS/13-(1).jpg.jpeg",
           "/CLOVE DELUX ROOMS/TRD00946-(1).jpg.jpeg"
         ],
-        link: "/rooms",
+        link: "/rooms/clove-deluxe-rooms",
         linkText: "Explore Room"
       }
     ]
@@ -111,7 +111,7 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
           "/COFFEE LAND POOL VILLA/TRD01785.jpg.jpeg",
           "/COFFEE LAND POOL VILLA/TRD01795.jpg.jpeg"
         ],
-        link: "/rooms",
+        link: "/rooms/coffee-land-pool-villa",
         linkText: "Explore Villa"
       },
       {
@@ -127,7 +127,7 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
           "/COFFEE LAND FAMILY POOL VILLA/TRD01641.jpg.jpeg",
           "/COFFEE LAND FAMILY POOL VILLA/TRD01740.jpg.jpeg"
         ],
-        link: "/rooms",
+        link: "/rooms/coffee-land-family-pool-villa",
         linkText: "Explore Villa"
       }
     ]
@@ -143,7 +143,7 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
           "/papper villa/TRD00698.jpg.jpeg",
           "/papper villa/TRD00814.jpg.jpeg"
         ],
-        link: "/rooms",
+        link: "/rooms/pepper-villa",
         linkText: "Explore Villa",
         isWide: true
       }
