@@ -17,11 +17,6 @@ export function AboutPreview() {
         className="order-2 lg:order-1 flex flex-col justify-center space-y-6 relative z-10"
       >
         <div className="space-y-4">
-          <div className="flex items-center gap-4">
-            <p className="text-sm text-[#2b3a2a]/60 font-medium tracking-widest uppercase">(01)</p>
-            <div className="w-12 h-[1px] bg-[#2b3a2a]/20" />
-          </div>
-
           <h2 className="text-3xl md:text-4xl font-serif leading-snug text-[#365b30]">
             As one of the top resorts in Wayanad, Ashirvadh Resorts crafts the perfect conditions for relaxation, where every guest finds tranquility in the embrace of nature.
           </h2>
