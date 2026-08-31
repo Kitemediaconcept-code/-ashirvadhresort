@@ -21,12 +21,12 @@
 }
 
 :root {
-  --background: #111111;
-  --foreground: #F5F5F0;
-  --primary: #D4C78B;
-  --primary-foreground: #111111;
-  --muted: #222222;
-  --muted-foreground: #A1A1AA;
+  --background: #FFFFFF;
+  --foreground: #111111;
+  --primary: #365b30;
+  --primary-foreground: #FFFFFF;
+  --muted: #F8F9FA;
+  --muted-foreground: #666666;
 }
 
 body {

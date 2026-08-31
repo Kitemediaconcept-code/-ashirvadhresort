@@ -4,14 +4,14 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t border-white/5 pt-16 pb-8">
+    <footer className="bg-background border-t border-black/5 pt-16 pb-8">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-12">
           
           {/* Brand */}
           <div className="space-y-6">
             <Image
-              src="/logo.png"
+              src="/logo2.png"
               alt="Ashirvadh Nature Resort"
               width={180}
               height={60}
@@ -60,10 +60,10 @@ export function Footer() {
           <div>
             <h4 className="text-foreground font-serif text-lg mb-6">Follow Us</h4>
             <div className="flex gap-4">
-              <a href="https://www.facebook.com/share/19DspLVB3T/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all">
+              <a href="https://www.facebook.com/share/19DspLVB3T/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-black/10 flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               </a>
-              <a href="https://www.instagram.com/ashirvadhventures?igsi=MWFvOTBiaDVuZWhkag==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all">
+              <a href="https://www.instagram.com/ashirvadhventures?igsi=MWFvOTBiaDVuZWhkag==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-black/10 flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
             </div>
@@ -73,7 +73,7 @@ export function Footer() {
                 href="https://wa.me/917902929491" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-transparent border border-white/10 text-foreground px-6 py-2.5 rounded-full text-sm hover:border-primary hover:text-primary transition-all"
+                className="inline-flex items-center gap-2 bg-transparent border border-black/10 text-foreground px-6 py-2.5 rounded-full text-sm hover:border-primary hover:text-primary transition-all"
               >
                 Chat on WhatsApp
               </Link>
@@ -82,7 +82,7 @@ export function Footer() {
 
         </div>
 
-        <div className="border-t border-white/5 pt-8 text-center md:text-left md:flex justify-between items-center text-sm text-muted-foreground">
+        <div className="border-t border-black/5 pt-8 text-center md:text-left md:flex justify-between items-center text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Ashirvadh Nature Resort. All rights reserved.</p>
           <div className="flex gap-4 justify-center mt-4 md:mt-0">
             <Link href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
