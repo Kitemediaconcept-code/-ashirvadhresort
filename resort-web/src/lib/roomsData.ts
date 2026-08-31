@@ -126,7 +126,6 @@ export const roomsData: Record<string, RoomDetails> = {
       '/COFFEE LAND FAMILY POOL VILLA/25.jpg.jpeg',
       '/COFFEE LAND FAMILY POOL VILLA/TRD00789.jpg.jpeg',
       '/COFFEE LAND FAMILY POOL VILLA/TRD00814.jpg.jpeg',
-      '/COFFEE LAND FAMILY POOL VILLA/TRD00873.jpg.jpeg',
       '/COFFEE LAND FAMILY POOL VILLA/TRD01569.jpg.jpeg',
       '/COFFEE LAND FAMILY POOL VILLA/TRD01641.jpg.jpeg',
       '/COFFEE LAND FAMILY POOL VILLA/TRD01740.jpg.jpeg'
