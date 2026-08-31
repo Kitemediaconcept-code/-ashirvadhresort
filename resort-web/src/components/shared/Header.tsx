@@ -63,7 +63,7 @@ export function Header() {
                         <div className="flex flex-col gap-1.5">
                           {/* Cottages link */}
                           <Link
-                            href="/rooms#cottages"
+                            href="/rooms/cottages"
                             className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 hover:text-[#365b30] hover:bg-gray-50 transition-all text-sm font-medium"
                           >
                             <Home className="w-4 h-4 shrink-0" />
@@ -72,7 +72,7 @@ export function Header() {
 
                           {/* Pool Villas link */}
                           <Link
-                            href="/rooms#pool-villas"
+                            href="/rooms/pool-villas"
                             className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 hover:text-[#365b30] hover:bg-gray-50 transition-all text-sm font-medium"
                           >
                             <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -86,7 +86,7 @@ export function Header() {
 
                           {/* Villas link */}
                           <Link
-                            href="/rooms#villas"
+                            href="/rooms/villas"
                             className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 hover:text-[#365b30] hover:bg-gray-50 transition-all text-sm font-medium"
                           >
                             <Palmtree className="w-4 h-4 shrink-0" />
@@ -173,7 +173,7 @@ export function Header() {
                       </Link>
                       <div className="flex flex-col items-center gap-2.5 text-sm font-medium text-[#A1A1AA] mt-1">
                         <Link
-                          href="/rooms#cottages"
+                          href="/rooms/cottages"
                           onClick={() => setIsMobileMenuOpen(false)}
                           className="hover:text-primary transition-colors flex items-center gap-2"
                         >
@@ -181,7 +181,7 @@ export function Header() {
                           <span>Cottages</span>
                         </Link>
                         <Link
-                          href="/rooms#pool-villas"
+                          href="/rooms/pool-villas"
                           onClick={() => setIsMobileMenuOpen(false)}
                           className="hover:text-primary transition-colors flex items-center gap-2"
                         >
@@ -194,7 +194,7 @@ export function Header() {
                           <span>Pool Villas</span>
                         </Link>
                         <Link
-                          href="/rooms#villas"
+                          href="/rooms/villas"
                           onClick={() => setIsMobileMenuOpen(false)}
                           className="hover:text-primary transition-colors flex items-center gap-2"
                         >

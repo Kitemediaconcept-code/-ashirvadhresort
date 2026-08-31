@@ -151,22 +151,28 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
   }
 ];
 
-export function DetailedCatalog() {
+export function DetailedCatalog({ filterCategory }: { filterCategory?: "Cottages" | "Pool Villas" | "Villas" }) {
+  const filteredData = filterCategory 
+    ? catalogData.filter((cat) => cat.category === filterCategory)
+    : catalogData;
+
   return (
     <section className="bg-white text-[#365b30] py-16 w-full">
       <div className="flex flex-col gap-20">
         
         {/* Header */}
-        <div className="flex flex-col items-center text-center gap-4">
-          <h2 className="text-3xl md:text-4xl lg:text-[40px] font-serif text-[#365b30]">Catalog of our stays</h2>
-          <p className="text-sm md:text-[15px] text-[#365b30]/70 max-w-lg leading-relaxed">
-            Thoughtfully designed spaces, surrounded by nature, crafted for comfort, relaxation and memorable experiences.
-          </p>
-        </div>
+        {!filterCategory && (
+          <div className="flex flex-col items-center text-center gap-4">
+            <h2 className="text-3xl md:text-4xl lg:text-[40px] font-serif text-[#365b30]">Catalog of our stays</h2>
+            <p className="text-sm md:text-[15px] text-[#365b30]/70 max-w-lg leading-relaxed">
+              Thoughtfully designed spaces, surrounded by nature, crafted for comfort, relaxation and memorable experiences.
+            </p>
+          </div>
+        )}
 
         {/* Categories */}
         <div className="flex flex-col gap-16 md:gap-24">
-          {catalogData.map((category, catIdx) => (
+          {filteredData.map((category, catIdx) => (
             <div 
               key={catIdx} 
               id={category.category.toLowerCase().replace(/\s+/g, '-')} 
