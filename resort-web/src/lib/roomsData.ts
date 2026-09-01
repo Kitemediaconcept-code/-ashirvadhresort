@@ -43,7 +43,7 @@ export const roomsData: Record<string, RoomDetails> = {
   'cinnamon-luxury-room': {
     slug: 'cinnamon-luxury-room',
     title: 'Cinnamon Luxury Room',
-    description: 'Elegant luxury rooms with modern amenities and nature views.',
+    description: 'Elegant luxury rooms with modern amenities and natural views.',
     images: [
       '/CINNAMON LUXURY ROOM/08.jpg.jpeg',
       '/CINNAMON LUXURY ROOM/15.jpg.jpeg',

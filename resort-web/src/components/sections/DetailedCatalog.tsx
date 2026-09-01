@@ -75,7 +75,7 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
       },
       {
         title: "CINNAMON LUXURY ROOM",
-        description: "Elegant luxury rooms with modern amenities and nature views.",
+        description: "Elegant luxury rooms with modern amenities and natural views.",
         images: [
           "/CINNAMON LUXURY ROOM/08.jpg.jpeg", 
           "/CINNAMON LUXURY ROOM/15.jpg.jpeg", 
