@@ -47,7 +47,7 @@ export function ExperiencesPreview() {
         >
           <h2 className="text-3xl font-serif text-[#365b30] mb-6">Experiences</h2>
           <p className="text-[#365b30]/80 text-sm leading-relaxed max-w-sm">
-            At Ashirvadh Resorts Wayanad, from peaceful nature trails to exciting outdoor activities and delightful dining — there&apos;s something for every soul visiting resorts in Wayanad.
+            At Ashirvadh Resorts Wayanad, from peaceful nature trails to exciting outdoor activities and delightful dining, there&apos;s something for everyone visiting the resort in Wayanad.
           </p>
         </motion.div>
         
