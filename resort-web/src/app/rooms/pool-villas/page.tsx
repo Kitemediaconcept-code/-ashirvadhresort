@@ -14,7 +14,7 @@ export default function PoolVillasPage() {
         <div className="max-w-2xl mb-16">
           <h1 className="text-5xl md:text-6xl font-serif mb-6 text-black">Pool Villas</h1>
           <p className="text-gray-700 text-lg">
-            Indulge in our private swimming pool villas. Overlooking the serene coffee plantations, they offer ultimate privacy, space, and leisure.
+            Indulge in our private pool villas, overlooking the serene coffee plantations; they offer ultimate privacy, space, and leisure.
           </p>
         </div>
 
