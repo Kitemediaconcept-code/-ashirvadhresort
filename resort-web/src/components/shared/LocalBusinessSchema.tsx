@@ -32,7 +32,7 @@ export function LocalBusinessSchema() {
       "bestRating": "5"
     },
     "sameAs": [
-      "https://www.instagram.com/ashirvadhresort",
+      "https://www.instagram.com/ashirvadhventures",
       "https://maps.app.goo.gl/your-google-maps-link"
     ],
     "amenityFeature": [
