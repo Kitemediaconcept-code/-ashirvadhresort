@@ -18,7 +18,7 @@ export function AboutPreview() {
       >
         <div className="space-y-4">
           <h2 className="text-3xl md:text-4xl font-serif leading-snug text-[#365b30]">
-            As one of the top resorts in Wayanad, Ashirvadh Resorts crafts the perfect conditions for relaxation, where every guest finds tranquility in the embrace of nature.
+            As one of the top resorts in Wayanad, Ashirvadh Resorts creates the perfect setting for relaxation, where every guest finds tranquility in nature&apos;s embrace.
           </h2>
         </div>
 
