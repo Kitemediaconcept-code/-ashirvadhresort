@@ -69,7 +69,7 @@ export const roomsData: Record<string, RoomDetails> = {
   'clove-deluxe-rooms': {
     slug: 'clove-deluxe-rooms',
     title: 'Clove Deluxe Rooms',
-    description: 'Cozy deluxe rooms designed for a relaxed and refreshing stay.',
+    description: 'Cozy deluxe rooms designed for a relaxing and refreshing stay.',
     images: [
       '/CLOVE DELUX ROOMS/12.jpg.jpeg',
       '/CLOVE DELUX ROOMS/13-(1).jpg.jpeg',

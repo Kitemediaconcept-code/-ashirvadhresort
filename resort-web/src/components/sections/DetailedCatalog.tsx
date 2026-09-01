@@ -87,7 +87,7 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
       },
       {
         title: "CLOVE DELUX ROOMS",
-        description: "Cozy deluxe rooms designed for a relaxed and refreshing stay.",
+        description: "Cozy deluxe rooms designed for a relaxing and refreshing stay.",
         images: [
           "/CLOVE DELUX ROOMS/12.jpg.jpeg",
           "/CLOVE DELUX ROOMS/13-(1).jpg.jpeg",
