@@ -67,6 +67,7 @@ import { WhatsAppWidget } from "@/components/shared/WhatsAppWidget";
 import { VirtualTourWidget } from "@/components/shared/VirtualTourWidget";
 import { SmoothScroll } from "@/components/shared/SmoothScroll";
 import { LocalBusinessSchema } from "@/components/shared/LocalBusinessSchema";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function RootLayout({
   children,
@@ -89,6 +90,7 @@ export default function RootLayout({
         <WhatsAppWidget />
         <VirtualTourWidget />
       </body>
+      <GoogleAnalytics gaId="G-0C2Q8TGJ11" />
     </html>
   );
 }
