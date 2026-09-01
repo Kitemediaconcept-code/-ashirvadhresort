@@ -18,7 +18,7 @@ export function Footer() {
               className="w-40 object-contain"
             />
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
-              Luxury stays nestled in the heart of Wayanad&apos;s natural beauty. Experience tranquility, comfort, and premium hospitality.
+              Luxury stays are nestled in the heart of Wayanad&apos;s natural beauty. Experience tranquility, comfort, and premium hospitality.
             </p>
           </div>
 
