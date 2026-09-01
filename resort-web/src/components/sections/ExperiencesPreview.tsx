@@ -58,7 +58,7 @@ export function ExperiencesPreview() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h3 className="text-3xl md:text-4xl font-sans leading-tight text-[#365b30]">
-            Here begins an adventure, a new gastronomic experience and harmony with nature.
+            Here begins an adventure: a new gastronomic experience in harmony with nature.
           </h3>
         </motion.div>
       </div>
