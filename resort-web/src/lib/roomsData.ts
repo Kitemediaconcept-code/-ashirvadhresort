@@ -120,7 +120,7 @@ export const roomsData: Record<string, RoomDetails> = {
   'coffee-land-family-pool-villa': {
     slug: 'coffee-land-family-pool-villa',
     title: 'Coffee Land Family Pool Villa',
-    description: 'Spacious pool villas perfect for families and memorable getaways.',
+    description: 'Spacious pool villas, perfect for families and memorable getaways.',
     images: [
       '/COFFEE LAND FAMILY POOL VILLA/24.jpg.jpeg',
       '/COFFEE LAND FAMILY POOL VILLA/25.jpg.jpeg',

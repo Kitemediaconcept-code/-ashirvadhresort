@@ -116,7 +116,7 @@ const catalogData: { category: string; viewAllLink: string; items: CatalogItem[]
       },
       {
         title: "COFFEE LAND FAMILY POOL VILLA",
-        description: "Spacious pool villas perfect for families and memorable getaways.",
+        description: "Spacious pool villas, perfect for families and memorable getaways.",
         images: [
           "/COFFEE LAND FAMILY POOL VILLA/24.jpg.jpeg",
           "/COFFEE LAND FAMILY POOL VILLA/25.jpg.jpeg",
