@@ -1,6 +1,15 @@
+"use client";
+
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export function WhatsAppWidget() {
+  const pathname = usePathname();
+
+  if (pathname === "/ashirvad360" || pathname === "/360-tour") {
+    return null;
+  }
+
   return (
     <a
       href="https://wa.me/917902929491"
@@ -20,5 +29,3 @@ export function WhatsAppWidget() {
     </a>
   );
 }
-
-

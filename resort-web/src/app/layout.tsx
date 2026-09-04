@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Manrope } from 'next/font/google';
+import { SmoothScroll } from "@/components/shared/SmoothScroll";
+import { LocalBusinessSchema } from "@/components/shared/LocalBusinessSchema";
+import { ClientLayoutWrapper } from "@/components/shared/ClientLayoutWrapper";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -61,14 +65,6 @@ export const metadata: Metadata = {
   },
 };
 
-import { Header } from "@/components/shared/Header";
-import { Footer } from "@/components/shared/Footer";
-import { WhatsAppWidget } from "@/components/shared/WhatsAppWidget";
-import { VirtualTourWidget } from "@/components/shared/VirtualTourWidget";
-import { SmoothScroll } from "@/components/shared/SmoothScroll";
-import { LocalBusinessSchema } from "@/components/shared/LocalBusinessSchema";
-import { GoogleAnalytics } from "@next/third-parties/google";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -84,11 +80,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col font-sans relative">
         <SmoothScroll />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppWidget />
-        <VirtualTourWidget />
+        <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
       </body>
       <GoogleAnalytics gaId="G-0C2Q8TGJ11" />
     </html>
