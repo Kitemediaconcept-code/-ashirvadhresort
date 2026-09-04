@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 .open-next/
+
+# 360° tour assets — served from external CDN, too large for git
+/public/ashirvad360/
