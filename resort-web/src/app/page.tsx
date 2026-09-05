@@ -14,6 +14,7 @@ import { StatsBar } from "@/components/sections/StatsBar";
 const AboutPreview = dynamic(() => import('@/components/sections/AboutPreview').then(mod => mod.AboutPreview), { ssr: true });
 const DetailedCatalog = dynamic(() => import('@/components/sections/DetailedCatalog').then(mod => mod.DetailedCatalog), { ssr: true });
 const MoreThanStay = dynamic(() => import('@/components/sections/MoreThanStay').then(mod => mod.MoreThanStay), { ssr: true });
+const ExperiencesPreview = dynamic(() => import('@/components/sections/ExperiencesPreview').then(mod => mod.ExperiencesPreview), { ssr: true });
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
         <DetailedCatalog />
       </div>
       <MoreThanStay />
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-24 py-8 md:py-16">
+        <ExperiencesPreview />
+      </div>
     </div>
   );
 }
