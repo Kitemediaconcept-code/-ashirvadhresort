@@ -20,7 +20,7 @@ export function WhatsAppWidget() {
     >
       <Image 
         src="/whatsappicon.png"
-        alt="WhatsApp Chat"
+        alt="Ashirvad Resort wayanad - WhatsApp Chat"
         width={56}
         height={56}
         priority

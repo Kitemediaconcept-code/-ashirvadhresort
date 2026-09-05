@@ -18,7 +18,7 @@ export function WayanadFeatures() {
         className="relative rounded-[32px] overflow-hidden min-h-[500px] bg-[#f8f6f0] flex items-center shadow-xl"
       >
         <div className="absolute inset-0 z-0">
-          <Image src="/western.png" alt="Wayanad Landscape" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+          <Image src="/western.png" alt="Ashirvad Resort wayanad - Wayanad Landscape" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
         </div>
         
         <div className="absolute inset-0 bg-gradient-to-r from-[#f8f6f0] from-30% via-[#f8f6f0]/70 via-50% to-transparent z-10" />
@@ -87,7 +87,7 @@ export function WayanadFeatures() {
         <div className="w-full xl:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Summer */}
           <div className="relative h-[320px] rounded-2xl overflow-hidden group">
-            <Image src="/summer.png" alt="Summer in Wayanad" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
+            <Image src="/summer.png" alt="Ashirvad Resort wayanad - Summer in Wayanad" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
             <div className="absolute bottom-0 left-0 w-full p-6">
               <Sun className="text-primary mb-3" size={28} />
@@ -99,7 +99,7 @@ export function WayanadFeatures() {
 
           {/* Monsoon */}
           <div className="relative h-[320px] rounded-2xl overflow-hidden group">
-            <Image src="/monsoon.png" alt="Monsoon in Wayanad" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
+            <Image src="/monsoon.png" alt="Ashirvad Resort wayanad - Monsoon in Wayanad" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
             <div className="absolute bottom-0 left-0 w-full p-6">
               <CloudRain className="text-white/80 mb-3" size={28} />
@@ -111,7 +111,7 @@ export function WayanadFeatures() {
 
           {/* Autumn */}
           <div className="relative h-[320px] rounded-2xl overflow-hidden group">
-            <Image src="/autumn.png" alt="Autumn in Wayanad" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
+            <Image src="/autumn.png" alt="Ashirvad Resort wayanad - Autumn in Wayanad" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
             <div className="absolute bottom-0 left-0 w-full p-6">
               <Leaf className="text-[#d97736] mb-3" size={28} />
@@ -123,7 +123,7 @@ export function WayanadFeatures() {
 
           {/* Winter */}
           <div className="relative h-[320px] rounded-2xl overflow-hidden group">
-            <Image src="/winter.png" alt="Winter in Wayanad" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
+            <Image src="/winter.png" alt="Ashirvad Resort wayanad - Winter in Wayanad" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
             <div className="absolute bottom-0 left-0 w-full p-6">
               <Snowflake className="text-[#a4c2f4] mb-3" size={28} />

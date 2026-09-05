@@ -33,7 +33,7 @@ function AutoSlideImage({ images, alt }: { images: string[], alt: string }) {
           <div key={idx} className="relative w-full h-full shrink-0">
             <Image
               src={src}
-              alt={`${alt} ${idx + 1}`}
+              alt={`Ashirvad Resort wayanad - ${alt} ${idx + 1}`}
               fill
               sizes="(max-width: 768px) 85vw, (max-width: 1024px) 420px, 33vw"
               priority={idx === 0}
@@ -86,7 +86,7 @@ export function CatalogCarousel() {
             transition={{ delay: idx * 0.1 }}
             className="relative w-[85vw] md:w-[420px] lg:w-full aspect-[4/5] lg:aspect-[4/5] rounded-[24px] md:rounded-[32px] overflow-hidden snap-start shrink-0 group"
           >
-            <AutoSlideImage images={item.images} alt={item.title} />
+            <AutoSlideImage images={item.images} alt={`Ashirvad Resort wayanad - ${item.title}`} />
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80 pointer-events-none" />
             

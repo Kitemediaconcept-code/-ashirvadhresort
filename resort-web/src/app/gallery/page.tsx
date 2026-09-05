@@ -51,7 +51,7 @@ export default function GalleryPage() {
             <div key={idx} className="relative w-full rounded-2xl md:rounded-3xl overflow-hidden break-inside-avoid group cursor-pointer">
               <Image 
                 src={src} 
-                alt={`Gallery image ${idx + 1}`}
+                alt={`Ashirvad Resort wayanad - Gallery image ${idx + 1}`}
                 width={800}
                 height={800}
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"

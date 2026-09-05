@@ -51,7 +51,7 @@ export function AboutPreview() {
         <div className="relative w-full aspect-[4/3] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl mb-8 md:mb-0">
           <Image
             src="/aboutphoto.jpeg"
-            alt="Ashirvadh Nature Resort"
+            alt="Ashirvad Resort wayanad - Ashirvadh Nature Resort"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover hover:scale-105 transition-transform duration-1000"

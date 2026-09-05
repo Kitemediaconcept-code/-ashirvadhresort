@@ -43,7 +43,7 @@ function AutoSlideImage({ images, alt }: { images: string[], alt: string }) {
           <Image
             key={src}
             src={src}
-            alt={`${alt} - Image ${i + 1}`}
+            alt={`Ashirvad Resort wayanad - ${alt} - Image ${i + 1}`}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className={`object-cover transition-all duration-1000 group-hover:scale-105 ${
@@ -209,9 +209,9 @@ export function DetailedCatalog({ filterCategory }: { filterCategory?: "Cottages
                       {/* Image container: stacks on top on mobile, on the right on desktop */}
                       <div className="relative h-[250px] md:h-auto md:w-1/2 w-full z-0 overflow-hidden">
                         {item.images ? (
-                          <AutoSlideImage images={item.images} alt={item.title} />
+                          <AutoSlideImage images={item.images} alt={`Ashirvad Resort wayanad - ${item.title}`} />
                         ) : (
-                          <Image src={item.image!} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={item.title} className="object-cover transition-transform duration-1000 group-hover:scale-105" />
+                          <Image src={item.image!} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={`Ashirvad Resort wayanad - ${item.title}`} className="object-cover transition-transform duration-1000 group-hover:scale-105" />
                         )}
                       </div>
                       
@@ -241,9 +241,9 @@ export function DetailedCatalog({ filterCategory }: { filterCategory?: "Cottages
                     >
                       <div className="relative aspect-[4/3] md:aspect-[1.1/1] w-full overflow-hidden">
                         {item.images ? (
-                          <AutoSlideImage images={item.images} alt={item.title} />
+                          <AutoSlideImage images={item.images} alt={`Ashirvad Resort wayanad - ${item.title}`} />
                         ) : (
-                          <Image src={item.image!} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={item.title} className="object-cover transition-transform duration-1000 group-hover:scale-105" />
+                          <Image src={item.image!} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={`Ashirvad Resort wayanad - ${item.title}`} className="object-cover transition-transform duration-1000 group-hover:scale-105" />
                         )}
                       </div>
                       <div className="p-6 md:p-8 flex flex-col gap-3 md:gap-4 flex-1">

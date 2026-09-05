@@ -58,7 +58,7 @@ export function RoomPreview() {
           >
             <Image 
               src={room.image} 
-              alt={room.title} 
+              alt={`Ashirvad Resort wayanad - ${room.title}`} 
               fill 
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
               className="object-cover transition-transform duration-1000 group-hover:scale-105"

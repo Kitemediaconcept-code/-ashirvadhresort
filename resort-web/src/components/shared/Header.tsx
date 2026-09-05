@@ -14,6 +14,7 @@ const navLinks = [
   { href: "/rooms", label: "Rooms & Suites" },
   { href: "/ashirvad360", label: "360° Tour" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -32,7 +33,7 @@ export function Header() {
             <Link href="/" className="shrink-0 pl-3 pr-2 flex items-center transition-opacity hover:opacity-80">
               <Image 
                 src="/logo2.png" 
-                alt="Ashirvadh Nature Resort" 
+                alt="Ashirvad Resort wayanad - Ashirvadh Nature Resort" 
                 width={140} 
                 height={40} 
                 className="h-6 md:h-7 w-auto object-contain"

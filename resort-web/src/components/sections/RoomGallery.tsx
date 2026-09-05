@@ -61,7 +61,7 @@ export function RoomGallery({ images, roomTitle }: RoomGalleryProps) {
         >
           <Image
             src={mainImage}
-            alt={`${roomTitle} - Main Gallery`}
+            alt={`Ashirvad Resort wayanad - ${roomTitle} - Main Gallery`}
             fill
             priority
             className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
@@ -85,7 +85,7 @@ export function RoomGallery({ images, roomTitle }: RoomGalleryProps) {
               >
                 <Image
                   src={src}
-                  alt={`${roomTitle} - Gallery Photo ${index + 2}`}
+                  alt={`Ashirvad Resort wayanad - ${roomTitle} - Gallery Photo ${index + 2}`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 30vw, 33vw"
@@ -143,7 +143,7 @@ export function RoomGallery({ images, roomTitle }: RoomGalleryProps) {
             <div className="relative w-full h-[60vh] md:h-[70vh]">
               <Image
                 src={images[activeImageIndex]}
-                alt={`${roomTitle} - Lightbox Photo`}
+                alt={`Ashirvad Resort wayanad - ${roomTitle} - Lightbox Photo`}
                 fill
                 className="object-contain"
                 priority
@@ -179,7 +179,7 @@ export function RoomGallery({ images, roomTitle }: RoomGalleryProps) {
                   >
                     <Image
                       src={src}
-                      alt={`Thumbnail ${index + 1}`}
+                      alt={`Ashirvad Resort wayanad - Thumbnail ${index + 1}`}
                       fill
                       className="object-cover"
                       sizes="80px"

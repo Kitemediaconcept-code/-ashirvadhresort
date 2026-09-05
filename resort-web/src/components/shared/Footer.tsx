@@ -15,7 +15,7 @@ export function Footer() {
           <div className="space-y-6">
             <Image
               src="/logo2.png"
-              alt="Ashirvadh Nature Resort"
+              alt="Ashirvad Resort wayanad - Ashirvadh Nature Resort"
               width={180}
               height={60}
               className="w-40 object-contain"
