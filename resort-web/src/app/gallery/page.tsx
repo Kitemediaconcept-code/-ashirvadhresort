@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 };
 
 const images = [
-  "/villa2.jpg",
-  "/r1.png",
+  "/resortarea.png",
+  "/poolvilla2.jpg",
   "/r2.png",
   "/r4.png",
   "/r5.png",

@@ -8,9 +8,9 @@ import { ArrowRight } from "lucide-react";
 const rooms = [
   { id: 1, title: "Cottages", image: "/cottages1.jpg", capacity: "1 - 2 Guests" },
   { id: 2, title: "Pool Villas", image: "/poolvilla.png", capacity: "1 - 4 Guests" },
-  { id: 3, title: "Villas", image: "/villa2.jpg", capacity: "1 - 6 Guests" },
+  { id: 3, title: "Villas", image: "/poolvilla2.jpg", capacity: "1 - 6 Guests" },
   { id: 4, title: "One-Bedroom Pool Villa", image: "/one-bedroom-pool-villa.jpg", capacity: "1 - 2 Guests" },
-  { id: 5, title: "Two-Bedroom Cottage", image: "/two-bedroom-cottage.jpg", capacity: "1 - 4 Guests" },
+  { id: 5, title: "Two-Bedroom Cottage", image: "/08.jpg", capacity: "1 - 4 Guests" },
   { id: 6, title: "Deluxe Cottage - King Bed", image: "/deluxe-cottage-king-bed.jpg", capacity: "1 - 2 Guests" },
   { id: 7, title: "Deluxe Cottage - Twin Beds", image: "/deluxe-cottage-twin-beds.jpg", capacity: "1 - 2 Guests" },
 ];

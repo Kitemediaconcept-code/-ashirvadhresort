@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const catalog = [
   { id: 1, title: "Cottages", price: "from ₹7,200", images: ["/cottages1.jpg", "/cottages1 (1).jpg", "/cottages1 (2).jpg", "/cottages1 (3).jpg"] },
   { id: 2, title: "Pool Villas", price: "from ₹10,000", images: ["/poolvilla.png", "/poolvilla2.jpg", "/poolvilla3.jpg", "/poolvilla4.png"] },
-  { id: 3, title: "Villas", price: "from ₹15,000", images: ["/villa2.jpg", "/villa3.jpg", "/villa4.jpg"] },
+  { id: 3, title: "Villas", price: "from ₹15,000", images: ["/poolvilla2.jpg", "/poolvilla3.jpg", "/poolvilla4.png"] },
 ];
 
 function AutoSlideImage({ images, alt }: { images: string[], alt: string }) {
