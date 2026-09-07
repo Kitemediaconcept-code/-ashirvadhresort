@@ -137,7 +137,9 @@ export function Header() {
             
             {/* Desktop 'Book' button option (hidden on small screens) */}
             <Link
-              href="/contact"
+              href="https://webreservation.innfinitcrs.co.in/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden lg:flex bg-[#111] text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-primary transition-colors ml-2"
             >
               Book
@@ -223,7 +225,9 @@ export function Header() {
                 );
               })}
               <Link
-                href="/contact"
+                href="https://webreservation.innfinitcrs.co.in/"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="mt-4 bg-primary text-primary-foreground px-8 py-3 rounded-full text-lg font-medium hover:bg-primary/90 transition-all"
               >
