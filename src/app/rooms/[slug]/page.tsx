@@ -58,7 +58,7 @@ export default async function RoomPage({ params }: PageProps) {
           </nav>
           
           <Link
-            href="https://webreservation.innfinitcrs.co.in/"
+            href="https://webreservation.innfinitcrs.co.in/DataExchange?theme=ashirvadh"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-200 text-xs md:text-sm font-semibold hover:bg-gray-50 hover:border-gray-300 transition-all text-gray-800"
@@ -147,7 +147,7 @@ export default async function RoomPage({ params }: PageProps) {
             <div className="h-px bg-gray-100 my-4" />
 
             <Link
-              href="https://webreservation.innfinitcrs.co.in/"
+              href="https://webreservation.innfinitcrs.co.in/DataExchange?theme=ashirvadh"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-4 bg-[#365b30] hover:bg-[#2c4b27] text-white rounded-full text-sm font-semibold transition-all shadow-sm hover:shadow"
