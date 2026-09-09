@@ -16,7 +16,7 @@ export default function BlogPage() {
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-6 text-justify">
           <p>
-            Wayanad is one of Kerala's most beautiful destinations, known for its green landscapes, wildlife, waterfalls, and refreshing climate. For travellers looking for a peaceful holiday away from busy city life, choosing the right stay plays an important role. Among the finest <strong>Resorts in Wayanad</strong>, Ashirvadh Nature Resort offers a perfect blend of modern comfort, natural beauty, and premium hospitality. Located in Krishnagiri, Wayanad, the resort is designed as a relaxing retreat where guests can enjoy scenic views, luxurious accommodation, and memorable experiences surrounded by nature.
+            Wayanad is one of Kerala&apos;s most beautiful destinations, known for its green landscapes, wildlife, waterfalls, and refreshing climate. For travellers looking for a peaceful holiday away from busy city life, choosing the right stay plays an important role. Among the finest <strong>Resorts in Wayanad</strong>, Ashirvadh Nature Resort offers a perfect blend of modern comfort, natural beauty, and premium hospitality. Located in Krishnagiri, Wayanad, the resort is designed as a relaxing retreat where guests can enjoy scenic views, luxurious accommodation, and memorable experiences surrounded by nature.
           </p>
 
           <h2 className="text-3xl font-serif text-primary mt-12 mb-6">A Luxury Nature Retreat in the Heart of Wayanad</h2>
@@ -48,7 +48,7 @@ export default function BlogPage() {
 
           <h2 className="text-3xl font-serif text-primary mt-12 mb-6">Explore the Charm of Krishnagiri, Wayanad</h2>
           <p>
-            Krishnagiri is one of the attractive locations in Wayanad, offering a peaceful environment with easy access to the region's natural attractions. Travellers searching for <strong>Resorts in Krishnagiri</strong> can find Ashirvadh Nature Resort as a perfect destination that combines location advantage with luxury comfort.
+            Krishnagiri is one of the attractive locations in Wayanad, offering a peaceful environment with easy access to the region&apos;s natural attractions. Travellers searching for <strong>Resorts in Krishnagiri</strong> can find Ashirvadh Nature Resort as a perfect destination that combines location advantage with luxury comfort.
           </p>
           <p>
             The area provides a refreshing setting filled with greenery, fresh air, and beautiful landscapes. Guests can explore nearby attractions, enjoy nature walks, and experience the unique beauty of Wayanad while returning to a comfortable and relaxing resort after a day of sightseeing.
@@ -59,7 +59,7 @@ export default function BlogPage() {
             A holiday becomes special when guests enjoy great food, activities, and hospitality. Ashirvadh Nature Resort focuses on creating complete experiences through delicious dining options, recreational activities, and personalised service.
           </p>
           <p>
-            The resort's restaurant offers a pleasant dining experience where guests can enjoy meals in a comfortable setting. Activities like campfire nights, nature trails, and entertainment spaces make every stay more enjoyable. Whether it is spending time with family, celebrating special occasions, or simply relaxing in nature, the resort creates opportunities for beautiful memories.
+            The resort&apos;s restaurant offers a pleasant dining experience where guests can enjoy meals in a comfortable setting. Activities like campfire nights, nature trails, and entertainment spaces make every stay more enjoyable. Whether it is spending time with family, celebrating special occasions, or simply relaxing in nature, the resort creates opportunities for beautiful memories.
           </p>
 
           <h2 className="text-3xl font-serif text-primary mt-12 mb-6">Why Choose Ashirvadh Nature Resort for Your Wayanad Holiday?</h2>

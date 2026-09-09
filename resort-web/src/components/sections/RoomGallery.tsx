@@ -38,17 +38,17 @@ export function RoomGallery({ images, roomTitle }: RoomGalleryProps) {
   const rightImages = images.slice(1, 4); // Display up to 3 on the right side
   const remainingCount = images.length - 4;
 
-  const handlePrev = () => {
+  function handlePrev() {
     setActiveImageIndex((prev) => 
       prev !== null ? (prev === 0 ? images.length - 1 : prev - 1) : null
     );
-  };
+  }
 
-  const handleNext = () => {
+  function handleNext() {
     setActiveImageIndex((prev) => 
       prev !== null ? (prev === images.length - 1 ? 0 : prev + 1) : null
     );
-  };
+  }
 
   return (
     <>
