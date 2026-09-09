@@ -49,8 +49,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone size={18} className="text-primary shrink-0 mt-0.5" />
                 <div className="flex flex-col">
-                  <span>+91 7902 929 491</span>
-                  <span>+91 90480 67880</span>
+                  <span>+91 7594998884</span>
+                  <span>+91 7594998885</span>
                 </div>
               </li>
               <li className="flex items-center gap-3">
@@ -74,7 +74,7 @@ export function Footer() {
             
             <div className="mt-8">
               <Link 
-                href="https://wa.me/917902929491" 
+                href="https://wa.me/917594998884" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-transparent border border-black/10 text-foreground px-6 py-2.5 rounded-full text-sm hover:border-primary hover:text-primary transition-all"
