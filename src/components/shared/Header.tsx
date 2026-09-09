@@ -137,7 +137,7 @@ export function Header() {
             
             {/* Desktop 'Book' button option (hidden on small screens) */}
             <Link
-              href="https://webreservation.innfinitcrs.co.in/"
+              href="https://webreservation.innfinitcrs.co.in/DataExchange?theme=ashirvadh"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden lg:flex bg-[#111] text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-primary transition-colors ml-2"
@@ -225,7 +225,7 @@ export function Header() {
                 );
               })}
               <Link
-                href="https://webreservation.innfinitcrs.co.in/"
+                href="https://webreservation.innfinitcrs.co.in/DataExchange?theme=ashirvadh"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}
