@@ -22,18 +22,25 @@ const blogPosts = [
     image: "/08.jpg",
     link: "/blog/best-resorts-in-wayanad-for-family",
     date: "Sep 25, 2026"
+  },
+  {
+    title: "Wedding Venues in Wayanad: Celebrate Your Special Day at Ashirvadh Nature Resort",
+    description: "Explore wedding venues in Wayanad at Ashirvadh Nature Resort. Plan intimate celebrations surrounded by greenery, scenic views and luxury stays.",
+    image: "/Sunset garden wedding setup.png",
+    link: "/blog/wedding-venues-in-wayanad",
+    date: "Oct 12, 2026"
   }
 ];
 
 export default function BlogIndexPage() {
   return (
     <div className="pt-32 pb-24 min-h-screen bg-[#f8f9fa] text-black">
-      <div className="container mx-auto px-6 md:px-12 max-w-6xl">
+      <div className="container mx-auto px-6 md:px-12 max-w-7xl">
         <h1 className="text-4xl md:text-5xl font-serif mb-12 text-center text-black">
           Our Blog
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post, index) => (
             <Link href={post.link} key={index} className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5">
               <div className="relative w-full aspect-[4/3] overflow-hidden">
@@ -46,10 +53,10 @@ export default function BlogIndexPage() {
               </div>
               <div className="p-8 flex flex-col flex-grow">
                 <p className="text-sm text-primary font-medium mb-3">{post.date}</p>
-                <h2 className="text-2xl font-serif text-black mb-4 group-hover:text-primary transition-colors">
+                <h2 className="text-xl font-serif text-black mb-4 group-hover:text-primary transition-colors line-clamp-2">
                   {post.title}
                 </h2>
-                <p className="text-gray-600 line-clamp-3 mb-6">
+                <p className="text-gray-600 line-clamp-3 mb-6 text-sm">
                   {post.description}
                 </p>
                 <div className="mt-auto">
