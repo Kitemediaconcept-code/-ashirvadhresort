@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog/best-resorts-in-wayanad-for-family/" }
 };
 
-export default function FamilyBlogPage() {
+export default function FamilyResortBlogPage() {
   return (
     <div className="pt-32 pb-24 min-h-screen bg-white text-black">
       <div className="container mx-auto px-6 md:px-12 max-w-4xl">
@@ -15,13 +15,13 @@ export default function FamilyBlogPage() {
           Best Resorts in Wayanad for Family: A Perfect Family Getaway at Ashirvadh Resorts
         </h1>
 
-        <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative w-full aspect-video md:aspect-[21/9] mb-10 rounded-2xl overflow-hidden shadow-lg">
           <Image 
-            src="/ROOMS.png" 
-            alt="Family Getaway at Ashirvadh Resorts" 
+            src="/08.jpg" 
+            alt="Family Resorts in Wayanad - Ashirvadh Resorts" 
             fill 
             className="object-cover"
-            priority
+            priority 
           />
         </div>
 
@@ -29,7 +29,6 @@ export default function FamilyBlogPage() {
           <p>
             Planning a family vacation to Wayanad means looking for more than just a place to stay. Families need a resort that offers comfort, safety, engaging experiences, peaceful surroundings, and memorable moments for every age group. Among the <strong>best resorts in Wayanad for family</strong>, Ashirvadh Resorts stands out as a premium nature retreat where families can enjoy quality time together while experiencing the beauty of Wayanad.
           </p>
-
           <p>
             Located in Krishnagiri, Wayanad, Ashirvadh Resorts combines modern comforts with the charm of a peaceful natural setting. Surrounded by lush greenery and scenic landscapes, the resort provides an ideal environment for families who want to relax, explore, and create unforgettable holiday memories.
           </p>
@@ -66,10 +65,10 @@ export default function FamilyBlogPage() {
 
           <h2 className="text-3xl font-serif text-primary mt-12 mb-6">Explore Wayanad Attractions Near the Resort</h2>
           <p>
-            Wayanad is one of Kerala's most loved family destinations, offering a mix of nature, adventure, history, and culture. Staying at a convenient location helps families explore popular attractions comfortably.
+            Wayanad is one of Kerala&apos;s most loved family destinations, offering a mix of nature, adventure, history, and culture. Staying at a convenient location helps families explore popular attractions comfortably.
           </p>
           <p>
-            Guests staying at Ashirvadh Resorts can plan visits to some of Wayanad's famous attractions, including Edakkal Caves, Pookode Lake, Chembra Peak, Soochipara Falls, and other scenic destinations.
+            Guests staying at Ashirvadh Resorts can plan visits to some of Wayanad&apos;s famous attractions, including Edakkal Caves, Pookode Lake, Chembra Peak, Soochipara Falls, and other scenic destinations.
           </p>
           <p>
             A family holiday in Wayanad allows children to experience nature, parents to enjoy scenic landscapes, and everyone to spend time away from everyday routines.
