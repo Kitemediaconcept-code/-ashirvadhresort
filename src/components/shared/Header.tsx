@@ -123,7 +123,7 @@ export function Header() {
               className="hidden md:flex items-center gap-2 text-sm font-medium text-black px-4 hover:opacity-70 transition-opacity"
             >
               <Mail size={16} />
-              <span>info@ashirvadh.com</span>
+              <span>ashirvadhkrishnagiri@gmail.com</span>
             </Link>
 
             {/* Mobile Menu Toggle */}

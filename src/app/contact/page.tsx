@@ -44,7 +44,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-medium text-lg text-black">Phone</h4>
-                    <p className="text-gray-700">+91 7594998884<br />+91 7594998885</p>
+                    <p className="text-gray-700">+91 7902 929 491<br />+91 90480 67880</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-medium text-lg text-black">Email</h4>
-                    <p className="text-gray-700">info@ashirvadhresort.com</p>
+                    <p className="text-gray-700">ashirvadhkrishnagiri@gmail.com</p>
                   </div>
                 </li>
               </ul>

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 
 import dynamic from 'next/dynamic';
 import { Hero } from "@/components/sections/Hero";
+import { BookingWidget } from "@/components/sections/BookingWidget";
 import { StatsBar } from "@/components/sections/StatsBar";
 
 
@@ -20,6 +21,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full bg-white text-black">
       <Hero />
+      <BookingWidget />
       <StatsBar />
       <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-24 py-8 md:py-16 flex flex-col gap-12 md:gap-24 lg:gap-32">
         <AboutPreview />
